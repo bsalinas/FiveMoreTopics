@@ -11,14 +11,7 @@
 		{
 			"name":"Course Introduction",
 			"time":10,
-			"description":"Talks about software design at a high level and provides an overview of the course",
-			"attachments":[
-				{
-					"link":"abc.html",
-					"title":"Slides",
-					"description":"These are the slides"
-				}
-			]
+			"description":"Talk about software design at a high level and provides an overview of the course"
 		},
 		{
 			"name":"Student Introduction",
@@ -27,16 +20,23 @@
 		},
 
 		{
-			"name":"What is “Good Design",
+			"name":"What is “Good Design?",
 			"time":20,
-			"description":"Have students post up their examples of good and bad design on the board. Discuss what it is about the designs that is good or bad. Have each group decide on 5 principles that make a design good or bad."
+			"description":"In your groups, discuss what makes a design \"good\" or \"bad\". As a group, list out 5 principles of good design.",
 		},
 
 		{
 			"name":"Software Design Process",
 			"time":30,
-			"description":"Have the groups discuss how software should be designed. What are the different activities and how much of each should happen? Outline where the topics we are covering in the class fit in with these.",
-			"instructor_notes":"The birth of a piece of software… where does a software design come from? User research? Business direction? Legacy rewrite? How does this influence the design process?Present a couple of software design processes that I’ve seen. Show examples of each step. Discuss tradeoffs between focusing narrowly or broadly."
+			"description":"In your groups, discuss how software should be designed. What are the steps of software design? What are the tasks associated with software design?  Then, after coming up with that list, discuss what the software design process should be.",
+			"instructor_notes":"The birth of a piece of software… where does a software design come from? User research? Business direction? Legacy rewrite? How does this influence the design process?Present a couple of software design processes that I’ve seen. Show examples of each step. Discuss tradeoffs between focusing narrowly or broadly.",
+			"attachments":[
+				{
+					"link":"week1/process_slides.pdf",
+					"title":"Slides",
+				}
+			]
+
 		}
 	],
 	"assignments":[

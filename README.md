@@ -16,9 +16,9 @@ You can see it live right here: <http://zachholman.com/left/>
 - Install Jekyll: `gem install jekyll`
 - [Fork this repository](https://github.com/holman/left/fork)
 - Clone it: `git clone https://github.com/YOUR-USER/left`
-- Run the jekyll server: `jekyll serve -w`
+- Run the jekyll server: `jekyll serve --port 5001 --watch --baseurl`
 
-You should have a server up and running locally at <http://localhost:4000>.
+You should have a server up and running locally at <http://localhost:5001>.
 
 ## Customization
 

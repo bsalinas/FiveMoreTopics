@@ -9,7 +9,7 @@ layout: layout
     {%assign this_class = site.data[this_class_file]%}
     {%assign last_class = site.data[last_class_file]%}
   <h1>
-    <a href="{{ page.url }}">Week {{ page.week }} - {%for topic in these_topics%}{{topic.name}} {%endfor%}</a>
+    <a href="{{site.baseurl}}{{ page.url }}">Week {{ page.week }} - {%for topic in these_topics%}{{topic.name}} {%endfor%}</a>
   </h1>
   <section class="byline">
     {{ page.date | date: "%B %e, %Y" }}

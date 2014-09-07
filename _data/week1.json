@@ -46,7 +46,7 @@
 			"type":"other"
 		},
 		{
-			"description":"Read http://www.markboulton.co.uk/journal/visual-design-is-not-a-thing",
+			"description":"Read <a href=\"http://www.markboulton.co.uk/journal/visual-design-is-not-a-thing\">http://www.markboulton.co.uk/journal/visual-design-is-not-a-thing</a>",
 			"required":true,
 			"type":"reading"
 		},
@@ -61,7 +61,7 @@
 			"type":"other"
 		},
 		{
-			"description":"Read http://www.visualmess.com/",
+			"description":"Read <a href=\"http://www.visualmess.com/\">http://www.visualmess.com/</a>",
 			"required":false,
 			"type":"reading"
 		}

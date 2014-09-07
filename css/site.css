@@ -67,9 +67,9 @@ ul {
       padding: 5px;
       text-decoration: none; }
 
-ul.assignments li.assignment {
+ul li.assignment {
   margin-bottom: 15px; }
-  ul.assignments li.assignment[data-required="false"]::before {
+  ul li.assignment[data-required="false"]::before {
     content: 'optional';
     background-color: #a2a2a2;
     padding: 2px 5px;
@@ -77,7 +77,7 @@ ul.assignments li.assignment {
     color: white;
     font-family: Helvetica;
     font-size: 12px; }
-  ul.assignments li.assignment[data-required="false"] {
+  ul li.assignment[data-required="false"] {
     color: #a2a2a2; }
 
 #instructor p {

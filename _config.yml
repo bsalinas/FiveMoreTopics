@@ -1,5 +1,6 @@
 markdown: rdiscount
-permalink: /posts/:title
+baseurl: /FiveMoreTopics
+permalink: /classes/:title
 rdiscount:
   extensions: [smart]
 

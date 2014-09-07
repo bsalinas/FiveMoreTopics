@@ -124,7 +124,7 @@ a {
   .content hr {
     border: 0;
     height: 6px;
-    background-image: url("/images/hr.png");
+    background-image: url("images/hr.png");
     background-repeat: repeat-x;
     margin: 2em 0; }
   .content li {

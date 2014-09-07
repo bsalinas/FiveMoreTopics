@@ -2,34 +2,47 @@
 layout: layout
 ---
 
-<section class="content">
+<section class="content week">
+    {%assign these_topics = site.data.topics | where:"id",page.topic%}
+    {%assign this_class_file = site.data.classes[page.week]%}
+    {%assign last_class_file = site.data.classes[page.last_week]%}
+    {%assign this_class = site.data[this_class_file]%}
+    {%assign last_class = site.data[last_class_file]%}
   <h1>
-    <a href="{{ page.url }}">{{ page.title }}</a>
+    <a href="{{ page.url }}">Week {{ page.week }} - {%for topic in these_topics%}{{topic.name}} {%endfor%}</a>
   </h1>
-
   <section class="byline">
     {{ page.date | date: "%B %e, %Y" }}
   </section>
 
-  {{ content }}
-
-  <!-- TODO: bio here -->
-  <section class="meta">
-    <h3>Discussion, links, and tweets</h3>
-    <section class="copy">
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
-        <img src="{{ site.github.owner_gravatar_url }}?s=142" height="50" width="50" />
-      </a>
-
-      <p>
-        I'm a developer at GitHub. <a href="https://twitter.com/{{ site.twitter }}" target="_blank">Follow me on Twitter</a>;
-        you'll enjoy my tweets. I take care to carefully craft each one. Or at least aim to make
-        you giggle. Or offended. One of those two&mdash; I haven't decided which yet.
-      </p>
-
-      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Tweet</a>
-      <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
-      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-    </section>
+  <section class="description">
+    <h2>Overview</h2>
+    {{this_class.description}}
   </section>
-</section>
+  <section id="last_week">
+    <h2>Assignments Due Today</h2>
+    <ul class="assignments">
+    {%for assignment in last_class.assignments%}
+      {% include assignment.html assignment=assignment%}
+    {%endfor%}
+    </ul>
+  </section>
+
+  <section id="this_week">
+    <h2>Class Activities</h2>
+    {%for activity in this_class.activities%}
+      {%include activity.html activity=activity%}
+    {%endfor%}
+  </section>
+
+
+  <section id="next_week">
+    <h2>Assignments Due Next Week</h2>
+    <ul class="assignments">
+    {%for assignment in this_class.assignments%}
+      {% include assignment.html assignment=assignment%}
+    {%endfor%}
+    </ul>
+  </section>
+
+  <!-- {{ content }} -->

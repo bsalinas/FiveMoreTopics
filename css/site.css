@@ -1,0 +1,107 @@
+.lighter {
+  color: #a2a2a2; }
+
+ul.topics_list li {
+  margin-bottom: 0 !important; }
+  ul.topics_list li[data-draft="true"] {
+    color: #a2a2a2; }
+
+ul.topics_list {
+  padding-bottom: 10px !important; }
+
+li.topic {
+  font-size: 12px;
+  color: #a2a2a2; }
+
+.btn {
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 3px;
+  background-color: #90cbd6;
+  text-decoration: none;
+  color: white;
+  font-family: Helvetica;
+  font-weight: semibold; }
+  .btn:hover {
+    background-color: #46a8ba; }
+  .btn:first-of-type {
+    margin-left: 0; }
+
+.listing .byline {
+  text-align: right; }
+
+#date_and_time {
+  line-height: 1.2em; }
+
+#topics .topic .name .lighter {
+  font-size: 0.75em; }
+
+ul {
+  padding: 0; }
+
+#textbooks .textbook {
+  display: block;
+  margin-bottom: 10px; }
+  #textbooks .textbook .title {
+    margin-bottom: 0; }
+  #textbooks .textbook .author {
+    margin-top: 0;
+    color: #a2a2a2; }
+  #textbooks .textbook .textbook_content {
+    width: 70%;
+    display: inline-block; }
+  #textbooks .textbook .book_img {
+    width: 15%;
+    margin-left: 12%;
+    vertical-align: bottom;
+    display: inline-block;
+    position: relative; }
+    #textbooks .textbook .book_img .price {
+      position: absolute;
+      /*left:2px;*/
+      top: 40%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      padding: 5px;
+      text-decoration: none; }
+
+ul.assignments li.assignment {
+  margin-bottom: 15px; }
+  ul.assignments li.assignment[data-required="false"]::before {
+    content: 'optional';
+    background-color: #a2a2a2;
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: white;
+    font-family: Helvetica;
+    font-size: 12px; }
+  ul.assignments li.assignment[data-required="false"] {
+    color: #a2a2a2; }
+
+#instructor p {
+  display: inline; }
+#instructor img {
+  width: 48%;
+  float: right;
+  margin-left: 10px;
+  vertical-align: top; }
+
+.attachments {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.activity {
+  margin-bottom: 25px; }
+
+.week h2 {
+  margin-bottom: 5px; }
+.week h3 {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+.week section {
+  margin-bottom: 50px; }
+
+.scrollable {
+  overflow: scroll; }

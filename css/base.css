@@ -11,7 +11,7 @@ a {
   position: fixed;
   left: 15px;
   top: 15px;
-  width: 80px;
+  width: 100px;
   font-family: Helvetica, sans-serif; }
   .sidebar a {
     text-decoration: none; }
@@ -28,10 +28,10 @@ a {
     .sidebar .name #fname {
       padding-left: 1px;
       font-size: 23px;
-      letter-spacing: 5px;
+      letter-spacing: 1px;
       color: black; }
     .sidebar .name #lname {
-      font-size: 17px;
+      font-size: 10px;
       font-weight: bold;
       letter-spacing: 1px;
       color: black; }
@@ -46,8 +46,9 @@ a {
     margin-right: 6px; }
   .sidebar .sections {
     margin: 15px 0 0 0; }
-    .sidebar .sections a {
-      padding: 3px 0;
+
+    .sidebar .sections li, .sidebar .sections a {
+      padding: 2px 0;
       color: black;
       font-weight: bold;
       font-size: 12px;
@@ -59,11 +60,11 @@ a {
       padding: 0; }
     .sidebar .sections li {
       list-style: none;
-      margin-bottom: 7px; }
+      margin-bottom: 0; }
 
 .content {
   max-width: 650px;
-  margin-left: 110px;
+  margin-left: 160px;
   margin-right: 20px;
   margin-bottom: 50px; }
   .content h1 {
@@ -125,7 +126,7 @@ a {
     height: 6px;
     background-image: url("/images/hr.png");
     background-repeat: repeat-x;
-    margin: 2em 3em; }
+    margin: 2em 0; }
   .content li {
     margin-bottom: 10px;
     line-height: 1.4em; }

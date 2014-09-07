@@ -1,0 +1,22 @@
+{
+	"week":0,
+	"topic":"none",
+	"description":"This week...",
+	"assignments":[
+		{
+			"description":"Fill out <a href=\"https://docs.google.com/forms/d/1RC8TXqoXpd5uQMyOZAD7fO4c1KFmBrnjnCKTOfDcw_8/viewform?usp=send_form\">class survey</a> providing an idea of background and goals",
+			"required":true,
+			"type":"other"
+		},
+		{
+			"description":"Bring in a printout of a screenshot of a software application that you think is “well designed” and one that you think is “poorly designed”. Write on that printout what you think makes it “good” or “poor”",
+			"required":true,
+			"type":"other"
+		},
+	],
+	"activities":[
+		{
+
+		}
+	]
+}

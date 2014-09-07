@@ -1,0 +1,153 @@
+$lighter:#A2A2A2;
+$green: #90CBD6;
+.lighter{
+	color:$lighter;
+}
+
+ul.topics_list li{
+	margin-bottom: 0!important;
+
+	&[data-draft="true"]{
+		color:$lighter;
+	}
+}
+ul.topics_list{
+	padding-bottom:10px!important;
+}
+li.topic{
+	font-size: 12px;
+	color: $lighter;
+	
+}
+
+.btn{
+	padding: 4px 8px;
+	margin: 4px;
+	border-radius:3px;
+	background-color:$green;
+	text-decoration:none;
+	color:white;
+	font-family:Helvetica;
+	font-weight:semibold;
+
+	&:hover{
+		background-color:darken($green,20%);
+	}
+	&:first-of-type{
+		margin-left:0;
+	}
+}
+
+.listing{
+	.byline{
+		text-align:right;
+	}
+}
+#date_and_time{
+	line-height:1.2em;
+}
+#topics{
+	.topic{
+		.name{
+			.lighter{
+				font-size:0.75em;
+			}
+		}
+	}
+}
+ul{
+	padding:0;
+}
+#textbooks{
+
+	.textbook{
+		display:block;
+		margin-bottom:10px;
+		.title{
+			margin-bottom:0;
+		}
+		.author{
+			margin-top:0;
+			color:$lighter;
+		}
+		.textbook_content{
+			width:70%;
+			display:inline-block;
+		}
+		.book_img{
+			width:15%;
+			margin-left:12%;
+			vertical-align:bottom;
+			display:inline-block;
+			position:relative;
+			.price{
+				position:absolute;
+				/*left:2px;*/
+				top:40%;
+				width:100%;
+				background-color:rgba(0,0,0,0.5);
+				color:white;
+				text-align:center;
+				padding:5px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+ul.assignments{
+
+	li.assignment{
+		margin-bottom:15px;
+
+		&[data-required="false"]::before{
+			content:'optional';
+			background-color:$lighter;
+			padding:2px 5px;
+			border-radius:3px;
+			color:white;
+			font-family:Helvetica;
+			font-size:12px;
+		}
+		&[data-required="false"]{
+			color:$lighter;
+		}
+	}
+}
+#instructor{
+	p{
+		display:inline;
+	}
+	img{
+		width:48%;
+		float:right;
+		margin-left:10px;
+		vertical-align:top;
+	}
+}
+
+.attachments{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+.activity{
+	margin-bottom:25px;
+}
+
+.week{
+	h2{
+		margin-bottom:5px;
+	}
+	h3{
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+	section{
+		margin-bottom:50px;
+	}
+}
+
+.scrollable{
+	overflow:scroll;
+}

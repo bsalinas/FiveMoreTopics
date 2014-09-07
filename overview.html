@@ -1,0 +1,72 @@
+---
+layout: layout
+title: "Course Overview"
+---
+
+<!-- You can edit this whole page, remove it, or use it as basis for any non-post pages you have. -->
+<section class="content">
+	  <h1>Course Overview</h1> 
+	  <p id="date_and_time" class="lighter">Ben Salinas <a href="mailto:benDOTsalinasATgmailDOTcom"><i class="fa fa-envelope lighter"></i></a>
+	  <br>1 Credit Course, Fall 2014, Olin College AC326
+	  <br>Tuesdays, 7:00 PM - 8:50 PM</p>
+	 <section id="description">
+	  <p>This course provides an introduction to several skills that are useful when designing software. The topics covered in the class augment those covered in other Olin design depths (such as ENGR 3220: HFID) and focuses on practical skills and general guidelines for designing beautiful and usable software. In particular, we will cover the basics of graphic design as it applies to software design, the importance of including real data in the design process, techniques for rapidly prototyping designs and how the software development process influences the user  experience of software.</p>
+  </section>
+  <hr/>
+
+  <section id="topics">
+  <h2>Topics</h2>
+  During this course, we will be covering 5 major topics, outlined in detail on the <a href="topics.html">topics page</a>
+  		<ol start="0">
+	  {%for topic in site.data.topics%}
+		  	<a href="topics.html#{{topic.id}}"><li>{{topic.name}}</li></a>
+	  {%endfor%}
+	  </ol>
+  </section>
+  <hr>
+  <section id="textbooks">
+  	<h2>Required Textbooks</h2>
+  	We will be referencing the following books and there will be readings from each of them. However, feel free to share with your classmates if you prefer.
+  	{%for book in site.data.textbooks.required%}
+  		<div class="textbook">
+  			<div class="textbook_content">
+		  		<h3 class="title">{{book.name}}</h3>
+		  		<h3 class="lighter author">{{book.author}}</h3>
+		  		<p>
+		  			{{book.description}}
+		  		</p>
+	  		</div>
+	  		<div class="book_img">
+	  			<a href="{{book.link}}"><img class = "" src="images/{{book.img}}"></img></a>
+	  			<a class="price" href="{{book.link}}">{{book.price}}</a>
+	  		</div>
+  		</div>
+  	{%endfor%}
+  	<h2>Other Good Resources (Not Required)</h2>
+  	We won’t be doing any readings from these books, but they are great resources in general.
+  	{%for book in site.data.textbooks.optional%}
+  		<div class="textbook">
+  			<div class="textbook_content">
+		  		<h3 class="title">{{book.name}}</h3>
+		  		<h3 class="lighter author">{{book.author}}</h3>
+		  		<p>
+		  			{{book.description}}
+		  		</p>
+	  		</div>
+	  		<div class="book_img">
+	  			<a href="{{book.link}}"><img class = "" src="images/{{book.img}}"></img></a>
+	  			<a class="price" href="{{book.link}}">{{book.price}}</a>
+	  		</div>
+  		</div>
+  	{%endfor%}
+  </section>
+  <hr/>
+	<section id="instructor">
+		<h2>About the Instructor</h2>
+		<p>
+		<img src="images/ben.jpg"></img> Ben is a designer specializing in engineering and holistic design. He currently works at <a href="www.goinvo.com">Involution Studios</a> where he designs software applications for clients including 3M, Walgreens, and marketing analytics firm, DataXu. Prior to working at Involution, Ben was worked at Parietal Systems where he designed and developed software for the Department of Defense. Ben graduated from Olin in 2010 with a degree in Engineering with a focus on Product Design. While at Olin, he co-founded <a href="www.luminairecoffee.com">Luminaire Coffee Equipment</a>, an engineering consulting company which focuses on the specialty coffee industry.</p>
+
+	</section>
+  
+</section>
+

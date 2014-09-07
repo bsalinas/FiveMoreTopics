@@ -1,0 +1,8 @@
+---
+layout: post
+title: Week 1
+category: classes
+week: 1
+last_week: 0
+topic: process
+---

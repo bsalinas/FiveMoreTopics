@@ -1,0 +1,9 @@
+---
+layout: post
+title: Week 6
+category: classes
+week: 6
+last_week: 5
+topic: realdata
+draft: true
+---

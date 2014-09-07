@@ -4,11 +4,20 @@ title: "Posts"
 ---
 
 <section class="content">
+<h1>Five More Topics for Software Designers</h1>
+Ben Salinas <a href="mailto:benDOTsalinasATgmailDOTcom"><i class="fa fa-envelope lighter"></i></a>
+<br>
+Tuesdays, 7:00-8:50 PM, Olin College AC326
+<hr>
+<h2>Course News</h2>
+As I update the website, I'll update this section so you know what's changed recently.
   <ul class="listing">
-    {% for post in site.posts %}
+    {% for post in site.categories.news %}
       {% unless post.draft %}
       <li>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+       <h3 href="{{ post.url }}">{{ post.title }} <span class="byline lighter">{{ post.date | date: "%B %e, %Y" }}</span></h3>
+        <p>{{post.excerpt}}</p>
+        <p class="byline">- Ben Salinas</p>
       </li>
       {% endunless %}
     {% endfor %}

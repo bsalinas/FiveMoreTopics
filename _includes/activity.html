@@ -1,0 +1,12 @@
+<!-- param.assignment -->
+<div class="activity">
+<h3>{{include.activity.name}} <span class="lighter">(~{{include.activity.time}} minutes)</span></h3>
+{{include.activity.description}}
+{%if include.activity.attachments%}
+	<div class="attachments">
+	{%for attachment in include.activity.attachments %}
+		<a class="btn" href="{{attachment.link}}"><i class="fa fa-download"></i> Download {{attachment.title}} </a></li>
+	{%endfor%}
+	</div>
+{%endif%}
+</div>

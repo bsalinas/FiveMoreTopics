@@ -17,6 +17,7 @@
 
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
   <link rel="stylesheet" href="{{ site.github.url }}/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="{{ site.github.url }}/css/site.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="{{ site.github.url }}/css/pygments.css" type="text/css" />
   <link media="only screen and (max-device-width: 480px)" href="{{ site.github.url }}/css/mobile.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="{{ site.github.url }}/css/mobile.css" type="text/css" rel="stylesheet" />
@@ -25,18 +26,21 @@
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="{{ site.github.url }}/js/application.js"></script>
+  <script>
+      $(document).ready(function(){
+        $('.sidebar .scrollable').css('height','calc(100% - '+($('.sidebar').height() - $('.sidebar .scrollable').height())+'px - 20px)');
+        $('.sidebar').css('height','100%');
+      });
+  </script>
 </head>
 
 <body>
   <section class="sidebar">
-    <a href="/">
-      <img src="{{ site.github.owner_gravatar_url }}?s=150" height="75" width="75" class="avatar" />
-    </a>
 
     <section class="name">
       <a href="/">
-        <span id="fname">{{ site.name|split:' '|first }}</span>
-        <span id="lname">{{ site.name|split:' '|last }}</span>
+        <span id="fname">5 More Topics</span>
+        <span id="lname">For Software Designers</span>
       </a>
     </section>
 
@@ -48,13 +52,38 @@
 
     <section class="sections">
       <ul>
-        <li><a href="/about.html">about</a></li>
-        <li><a href="/">posts</a></li>
+        <li><a href="/">updates</a></li>
+        <li><a href="/overview.html">overview</a></li>
+        <li><a href="/topics.html">the topics</a></li>
+        <li><a href="/assignments.html">assignments</a></li>
+      </ul>
+      <hr>
+    </section>
+    <section class="sections scrollable">
+        <ul class="topics_list">
+        <li class="topic"><a href="topics.html#process">process</a></li>
+        {%assign last_topic = "process"%}
+        {%for post in site.categories.classes reversed%}
+          {%if last_topic != post.topic%}
+           {%assign these_topics = site.data.topics | where:"id",post.topic%}
+           {%for topic in these_topics%}
+              </ul><ul class="topics_list">
+              <li class="topic"><a href="topics.html#{{topic.id}}">{{topic.short_name}}</a></li>
+            {%endfor%}
+            {%assign last_topic = post.topic%}
+          {%endif%}
+          {%if post.draft == true%}
+            <li data-draft="true">{{post.date | date_to_string}}</li>
+          {%else%}
+            <li data-draft="false"><a href="{{post.url}}">{{post.date | date_to_string}}</a></li>
+          {%endif%}
+        {%endfor%}
       </ul>
     </section>
   </section>
 
   {{ content }}
 </body>
+
 
 </html>

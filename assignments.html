@@ -1,0 +1,32 @@
+---
+layout: layout
+title: "Course Overview"
+---
+
+<!-- You can edit this whole page, remove it, or use it as basis for any non-post pages you have. -->
+<section class="content">
+	  <h1>Assignments</h1> 
+	  Here is a listing of all the assignments each week. This will continue to be populated each week.
+	  Or, check the summary of each class in the left navigation bar.
+	  {%for post in site.categories.classes%}
+	    {%assign this_class_file = site.data.classes[post.week]%}
+	    {%assign last_class_file = site.data.classes[post.last_week]%}
+	    {%assign this_class = site.data[this_class_file]%}
+	    {%assign last_class = site.data[last_class_file]%}
+	    
+		{%if this_class.assignments and post.draft != true%}
+	    	<h2><span class="lighter">Assigned: </span>{{post.date | date_to_string}}</h2>
+	    	<ul>
+	    	{%for assignment in this_class.assignments%}
+	    		{%include assignment.html assignment=assignment%}
+	    	{%endfor%}
+	    	</ul>
+	    {%endif%}
+	  {%endfor%}
+	  <h2><span class="lighter">Due: </span>09 Sep 2014</h2>
+	    <ul>
+	    	{%for assignment1 in site.data.week0.assignments%}
+	    		{%include assignment.html assignment=assignment1 %}
+	    	{%endfor%}
+	    </ul>
+</section>

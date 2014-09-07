@@ -1,0 +1,9 @@
+---
+layout: post
+title: Week 3
+category: classes
+week: 3
+last_week: 2
+draft: true
+topic: graphics
+---

@@ -1,0 +1,38 @@
+{
+	"required":[
+		{
+			"name":"The Non-Designer’s Design Book (3rd Edition)",
+			"author":"Robin Williams",
+			"price":"$20",
+			"link":"http://www.amazon.com/The-Non-Designers-Design-Book-Edition/dp/0321534042",
+			"img":"non-designers.jpg",
+			"description":"Provides a great overview of design principles for non-designers. We’ll use this for readings during the first portion of the class."
+		},
+		{
+			"name":"Data Points: Visualization That Means Something",
+			"author":"Nathan Yau",
+			"price":"$26",
+			"link":"http://www.amazon.com/Data-Points-Visualization-Means-Something/dp/111846219X",
+			"img":"datapoints.jpeg",
+			"description":"A detailed and approachable introduction to data visualization. Nathan Yau (of flowingdata.com) provides a great overview of visualization techniques and data exploration."
+		}
+	],
+	"optional":[
+		{
+			"name":"Design for Information",
+			"author":"Isabel Meirelles",
+			"price":"$28",
+			"link":"http://www.amazon.com/Design-Information-Introduction-Histories-Visualizations/dp/1592538061",
+			"img":"design_for_information.jpeg",
+			"description":"A lightweight textbook that looks at the principles behind data visualization while also exploring the history of various techniques. It has some amazing examples that it dissects. Highly recommended for anyone who wants to dive deeper into data visualization."
+		},
+		{
+			"name":"The Universal Principles of Design",
+			"author":"William Lidwell",
+			"price":"$15",
+			"link":"http://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879/",
+			"img":"universal_principles.jpeg",
+			"description":"An encyclopedia of 125 principles that drive human perception of design. A good book to thumb through."
+		}
+	]
+}

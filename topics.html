@@ -1,0 +1,33 @@
+---
+layout: layout
+title: "Course Topics"
+---
+
+<!-- You can edit this whole page, remove it, or use it as basis for any non-post pages you have. -->
+<section class="content">
+<h1>Topics</h1>
+	<section id="topics">
+	  {%for topic in site.data.topics%}
+	  	<div class="topic" id="{{topic.id}}">
+		  	<h2 class="name">{{topic.name}} <span class="lighter">(Week {{topic.time | array_to_sentence_string}})</span></h2>
+		  	<p>{{topic.description}}</p>
+		  	{%if topic.subtopics%}
+		  		<h3>Topics</h3>
+			  	<ul class="subtopics">
+			  	{%for subtopic in topic.subtopics%}
+			  		<li>{{subtopic.name}}</li>
+			  	{%endfor%}
+			  	</ul>
+			 {%endif%}
+		  	<h3>Objectives</h3>
+		  	<p>By the end of this section, students should be able to do the following:</p>
+		  	<ul class="subtopics">
+		  	{%for objective in topic.objectives%}
+		  		<li>{{objective.name}}</li>
+		  	{%endfor%}
+		  	</ul>
+	  	</div>
+	  	<hr/>
+	  {%endfor%}
+	</section>
+</section>

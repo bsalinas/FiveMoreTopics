@@ -1,0 +1,9 @@
+---
+layout: post
+title: Welcome To Five More Topics
+category: news
+---
+
+Welcome to "Five More Topics for Software Designers". I'm just setting up the website, but in the mean time you can check out some of the course material. On the left navigation, you can find the [course overview](overview.html). This includes the list of [textbooks](overview.html#textbooks) which you should purchase. You can also [read more about the topics](topics.html) that we will be covering this semester.
+
+---

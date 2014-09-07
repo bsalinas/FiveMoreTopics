@@ -38,7 +38,7 @@
   <section class="sidebar">
 
     <section class="name">
-      <a href="/">
+      <a href="{{site.baseurl}}/">
         <span id="fname">5 More Topics</span>
         <span id="lname">For Software Designers</span>
       </a>
@@ -47,28 +47,28 @@
     <section class="meta">
       <a href="{{ site.github.owner_url }}" target="_blank"><i class="fa fa-github"></i></a>
       <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="atom.xml"><i class="fa fa-rss"></i></a>
+      <a href="{{site.baseurl}}/atom.xml"><i class="fa fa-rss"></i></a>
     </section>
 
     <section class="sections">
       <ul>
-        <li><a href="index.html">updates</a></li>
-        <li><a href="overview.html">overview</a></li>
-        <li><a href="topics.html">the topics</a></li>
-        <li><a href="assignments.html">assignments</a></li>
+        <li><a href="{{site.baseurl}}/index.html">updates</a></li>
+        <li><a href="{{site.baseurl}}/overview.html">overview</a></li>
+        <li><a href="{{site.baseurl}}/topics.html">the topics</a></li>
+        <li><a href="{{site.baseurl}}/assignments.html">assignments</a></li>
       </ul>
       <hr>
     </section>
     <section class="sections scrollable">
         <ul class="topics_list">
-        <li class="topic"><a href="topics.html#process">process</a></li>
+        <li class="topic"><a href="{{site.baseurl}}/topics.html#process">process</a></li>
         {%assign last_topic = "process"%}
         {%for post in site.categories.classes reversed%}
           {%if last_topic != post.topic%}
            {%assign these_topics = site.data.topics | where:"id",post.topic%}
            {%for topic in these_topics%}
               </ul><ul class="topics_list">
-              <li class="topic"><a href="topics.html#{{topic.id}}">{{topic.short_name}}</a></li>
+              <li class="topic"><a href="{{site.baseurl}}/topics.html#{{topic.id}}">{{topic.short_name}}</a></li>
             {%endfor%}
             {%assign last_topic = post.topic%}
           {%endif%}

@@ -16,10 +16,10 @@ title: "Course Overview"
 
   <section id="topics">
   <h2>Topics</h2>
-  During this course, we will be covering 5 major topics, outlined in detail on the <a href="topics.html">topics page</a>
+  During this course, we will be covering 5 major topics, outlined in detail on the <a href="{{site.baseurl}}/topics.html">topics page</a>
   		<ol start="0">
 	  {%for topic in site.data.topics%}
-		  	<a href="topics.html#{{topic.id}}"><li>{{topic.name}}</li></a>
+		  	<a href="{{site.baseurl}}/topics.html#{{topic.id}}"><li>{{topic.name}}</li></a>
 	  {%endfor%}
 	  </ol>
   </section>

@@ -1,0 +1,220 @@
+---
+layout: layout
+title: "Intro Survey Results"
+---
+
+<script src="{{site.baseurl}}/js/heatmap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//This is some of the dirtiest javascript I have ever written. I am pretty ashamed. This comment will make it all better.
+		d3.csv("{{site.basurl}}/files/week1/intro_survey.csv", function(data){
+			var cleanData = [];
+			var design_categories = ["Illustrator","Photoshop","Balsamiq","Inkscape","Sketch"];
+			var sw_categories = ["iOS","Android","Java","C#/.NET","HTML/CSS","Javascript","Server Side JS","Rails","Python"];
+			var i=0;
+			var convertTextToNumber = function(toConvert){
+				console.log(toConvert);
+				if(toConvert == "I've never used it" || toConvert == "No Experience"){
+					return 0;
+				}
+				if(toConvert == "I've used it once or twice, but I'm not comfortable with it" || toConvert=="I've used it once or twice, but am not comfortable with it"){
+					return 1;
+				}
+				if(toConvert == "I know my way around it, but I am not an expert" || toConvert == "I'm comfortable with it but not an expert"){
+					return 2;
+				}
+				if(toConvert == "I am an expert!" || toConvert == "I live and breathe this language"){
+					return 3
+				}
+				return -1;
+			}
+			for(i=0; i<data.length; i++){
+				var thisObject = {};
+				var thisEl = data[i]
+				thisObject['name']=thisEl['Name'];
+				thisObject['class']= thisEl['Class'];
+				thisObject['major'] = thisEl['What is your major?']
+				thisObject['experience']=thisEl['What is your experience with Software Design?'];
+				thisObject['motivation']=thisEl['Why are you taking this class?'];
+				thisObject['other_languages']=thisEl['What languages did I forget in the above question?'];
+				thisObject['topics']=thisEl['Any topics you think we should definitely cover?'];
+
+				thisObject['design']= [];
+				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Adobe Illustrator]']));
+				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Adobe Photoshop]']));
+				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Balsamiq Mockups]']));
+				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Inkscape]']));
+				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Sketch (by Bohemian Coding... not Google SketchUp)]']));
+
+				thisObject['sw']= [];
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [iOS Development (Objective C or Swift)]']));
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [Android Development]']));
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [Java (in general)]']));
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [C#/.NET]']));
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [HTML/CSS]']));
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [Client Side Javascript (jQuery, BackboneJS, Angular, etc)]']));
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [Server Side Javascript (nodeJS, MeteorJS, etc)]']));
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [Ruby on Rails]']));
+				thisObject['sw'].push(convertTextToNumber(thisEl['How much experience do you have in the following programming languages? [Python]']));
+
+				
+				
+				
+
+				cleanData.push(thisObject);
+			}
+			console.log(cleanData);
+
+			var majors = [{"count":0,"name":"ECE"},{"count":0,"name":"MechE"},{"count":0,"name":"E:Systems"},{"count":0,"name":"E:Computing"},{"count":0,"name":"E:Robotics"},{"count":0,"name":"E:Design"},{"count":0,"name":"E:Bio"},{"count":0,"name":"E:MatSci"},{"count":0,"name":"Undecided, but I lean towards the electrons"},{"count":0,"name":"Undecided, but I lean towards the mechanicals"},{"count":0,"name":"Undecided and I have no clue"},{"count":0,"name":"Other"}];
+
+			var years = [{"count":0,"name":"Super Senior"},
+				{"count":0,"name":"Senior"},
+				{"count":0,"name":"Junior"},
+				{"count":0,"name":"Sophomore"},
+				{"count":0,"name":"First Year"},
+				{"count":0,"name":"Other"}];
+			for(i=0; i<cleanData.length; i++){
+				var broke = false;
+				for(j=0; j<majors.length; j++){
+					if(majors[j].name == cleanData[i].major){
+						majors[j].count = majors[j].count + 1;
+						broke=true;
+						break;
+					}
+				}
+				if(!broke){
+					majors[majors.length-1].count = majors[majors.length-1].count +1;
+				}
+
+				broke = false;
+				for(j=0; j<years.length; j++){
+					if(years[j].name == cleanData[i].class){
+						years[j].count = years[j].count + 1;
+						broke=true;
+						break;
+					}
+				}
+				if(!broke){
+					years[years.length-1].count = years[years.length-1].count +1;
+				}
+			}
+			var majors_data = $.map(majors,function(d){
+				return d.count;
+			})
+			var majors_labels = $.map(majors, function(d){
+				if(d.name =="Undecided, but I lean towards the mechanicals" ){
+					return "Undecided:MechE"
+				}
+				if(d.name =="Undecided, but I lean towards the electrons" ){
+					return "Undecided:ECE"
+				}
+				if(d.name =="Undecided and I have no clue" ){
+					return "Undecided"
+				}
+				
+				return d.name;
+			})
+			var years_data = $.map(years,function(d){
+				return d.count;
+			})
+			var years_labels = $.map(years,function(d){
+				return d.name;
+			})
+
+		var ctx = document.getElementById("majors").getContext("2d");
+		var myNewChart = new Chart(ctx).Bar({labels:majors_labels, datasets:[{
+			label: "Major",
+            // fillColor: "rgba(220,220,220,0.5)",
+            // strokeColor: "rgba(220,220,220,0.8)",
+            // highlightFill: "rgba(220,220,220,0.75)",
+            // highlightStroke: "rgba(220,220,220,1)",
+            data: majors_data
+		}]},{animation:false});
+
+		ctx = document.getElementById("years").getContext("2d");
+		var years_chart = new Chart(ctx).Bar({labels:years_labels, datasets:[{
+			label: "Year",
+            // fillColor: "rgba(220,220,220,0.5)",
+            // strokeColor: "rgba(220,220,220,0.8)",
+            // highlightFill: "rgba(220,220,220,0.75)",
+            // highlightStroke: "rgba(220,220,220,1)",
+            data: years_data
+		}]},{animation:false});
+
+
+		heatmap({selector:'#design_heatmap',width:800,height:(50*cleanData.length + 150),data:cleanData, data_key:'design',categories:design_categories});		
+		heatmap({selector:'#sw_heatmap',width:800,height:(50*cleanData.length + 150),data:cleanData, data_key:'sw',categories:sw_categories});
+			var labels = [];
+			$.merge(labels,design_categories);
+			$.merge(labels,sw_categories);
+			console.log(labels);
+			for(i=0; i<cleanData.length; i++){
+				var thisRadarData=[]
+				var thisStudent = cleanData[i];
+				var thisDesignData = thisStudent['design'];
+				var thisSoftwareData = thisStudent['sw'];
+				$.merge(thisRadarData,thisDesignData);
+				$.merge(thisRadarData,thisSoftwareData);
+				$('#students').append('<div data-student-index="'+i+'" class="student"></div>');
+				var $student = $('.student[data-student-index="'+i+'"]');
+				$student.append('<h3>'+thisStudent['class']+', <span class="lighter">'+thisStudent['major']+'</span></h3>');
+				$student.append('<div class="student_radar"><canvas id="student_radar_'+i+'" data-student-index="'+i+'" width="400" height="400"></canvas></div>');
+				ctx = document.getElementById("student_radar_"+i+"").getContext("2d");
+				var myRadarChart = new Chart(ctx).Radar({labels:labels, datasets:[{data:thisRadarData,fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)"}]},{scaleOverride: true,
+    			scaleSteps: 4,
+    			scaleStepWidth: 1,
+    			scaleStartValue: 0,});
+				$student.append('<div class="student_responses"></div>');
+				var $responses = $student.find('.student_responses');
+				if(thisStudent.other_languages){
+					$responses.append('<h4>Other Languages</h4>');
+					$responses.append('<p>'+thisStudent.other_languages+'</p>')	
+				}
+				if(thisStudent.experience){
+					$responses.append('<h4>Design Experience</h4>');
+					$responses.append('<p>'+thisStudent.experience+'</p>')	
+				}
+				if(thisStudent.motivation){
+					$responses.append('<h4>Goals of Class</h4>');
+					$responses.append('<p>'+thisStudent.motivation+'</p>')
+				}
+				if(thisStudent.topics){
+					$responses.append('<h4>Topics to Include</h4>');
+					$responses.append('<p>'+thisStudent.topics+'</p>')
+				}
+
+
+
+			}
+		});
+		
+	});
+</script>
+<section class="content">
+	<h1>Intro Survey Results</h1>
+	<section>
+		<h2>Distribution of Graduation Year</h2>
+		<canvas id="years" width="600" height="300"></canvas>
+	</section>
+	<section>
+		<h2>Distribution of Majors</h2>
+		<canvas id="majors" width="600" height="300"></canvas>
+	</section>
+	<section>
+		<h2>Familiarity With Design Software</h2>
+		<div id="design_heatmap">
+		</div>
+	</section>
+	<section>
+		<h2>Familiarity With Software Languages</h2>
+		<div id="sw_heatmap">
+		</div>
+	</section>
+	<section id="students">
+		<h2>Individual Student Profiles</h2>
+	</section>
+</section>

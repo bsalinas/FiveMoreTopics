@@ -1,0 +1,55 @@
+{
+	"week":2,
+	"topic":"graphics",
+	"description":"This week, we start exploring some of the principles of graphic design as they relate to software design. We will extend the concepts presented in <em>The Non-Designer's Design Book</em> with some general rules. As with any rules, we will also discuss when to break the rules.",
+	"activities":[
+		{
+			"name":"Group Activity: Discuss What We Think Makes Things Visually Appealing",
+			"type":"group",
+			"time":20,
+			"description":"In your groups, discuss the screenshots you brought in. What makes them visually appealing? What makes them visually appalling? Think about the Consistency, Repetition, Alignment, and Proximity that was presented in the reading. Present one as a group.",
+			"instructor_notes":"Draw the alignment lines, Count the fonts, count the colors."
+		},
+		{
+			"name":"Lecture: Achieving Structure and Visual Hierarchy",
+			"type":"lecture",
+			"time":30,
+			"description":"Structure and Visual Hierarchy are two of the most important principles when designing software. We will build on the topics from the reading and go through a handful of examples and rules.",
+			"instructor_notes":"Contrast, Repetition, Alignment, Proximity
+			Repetition: Fonts, Colors, Margins,... Font Treatment = type, size, color, style; Count the fonts; desgine fonts up front. Always use them. If not, add a new one. Choose a set of colors. For enterprise software, we do lots of greys. It lets the content shine 
+			Margins… but this is also about alignment 
+			Alignment: ALWAYS line things up. Left alignment > right alignment (generally) > centered 
+			Contrast: If things are not identical, make them very different. This is true with fonts, colors, etc. P
+			roximity: Arrange similar information together. If things are supposed to be together, make them closer together. In all these cases, examples!",
+			"attachments":[
+				{
+					"link":"week2/graphic_design_v01.pdf",
+					"title":"Slides",
+				}
+			]
+		},
+		{
+			"name":"Group Activity: Critique a Screen",
+			"time":30,
+			"description":"Each group will be given a web site and a large printout of a particular screen. Based on the lecture, make suggestions of how to improve the design."
+		}
+	],
+	"assignments":[
+		{
+			"description":"If you haven’t used InDesign/Illustrator before: watch <a href=\"https://www.youtube.com/watch?v=JfhHvAscNFA\">https://www.youtube.com/watch?v=JfhHvAscNFA</a>",
+			"required":true,
+			"type":"video"
+		},
+		{
+			"description":"Take the example screen you had at the end of class and translate a portion of it into InDesign or Illustrator. Get familiar with the basic tools presented in the above video as we will be using InDesign in class next week",
+			"required":true,
+			"type":"other"
+		},
+		{
+			"description":"Read Chapter 7: Using Color of <em>The Non-Designer's Design Book</em>",
+			"required":false,
+			"type":"reading"
+		}
+	]
+	
+}

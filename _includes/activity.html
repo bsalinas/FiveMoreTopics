@@ -5,7 +5,7 @@
 {%if include.activity.attachments%}
 	<div class="attachments">
 	{%for attachment in include.activity.attachments %}
-		<a class="btn" href="{{site.baseurl}}/files/{{attachment.link}}"><i class="fa fa-download"></i> Download {{attachment.title}} </a></li>
+		<a class="btn" href="{{site.baseurl}}/files/{{attachment.link}}" target="_blank"><i class="fa fa-download"></i> Download {{attachment.title}} </a></li>
 	{%endfor%}
 	</div>
 {%endif%}

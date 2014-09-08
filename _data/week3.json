@@ -12,11 +12,7 @@
 		}
 	],
 	"assignments":[
-		{
-			"description":"If you haven’t used InDesign/Illustrator before: watch <a href=\"https://www.youtube.com/watch?v=JfhHvAscNFA\">https://www.youtube.com/watch?v=JfhHvAscNFA</a>",
-			"required":true,
-			"type":"video"
-		}
+		
 	]
 	
 }

@@ -145,6 +145,7 @@ footer {
 
 .student_responses {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  width: calc(100% - 400px); }
   .student_responses h4 {
     margin-bottom: 0; }

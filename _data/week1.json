@@ -16,7 +16,15 @@
 		{
 			"name":"Student Introduction",
 			"time":10,
-			"description":"Review results of intro survey"
+			"description":"Review results of intro survey",
+			"attachments":[
+				{
+					"link":"/survey_results.html",
+					"title":"Survey Results",
+					"type":"link",
+					"location":"internal"
+				}
+			]
 		},
 
 		{
@@ -34,10 +42,17 @@
 				{
 					"link":"week1/process_slides.pdf",
 					"title":"Slides",
+					"type":"download"
 				}
 			]
 
+		},
+		{
+			"name":"Software Design Artifacts",
+			"time":20,
+			"description":"Based on your listing of design phases from before, discuss what design artifacts look like throughout the different phases. What tools should you be using?"
 		}
+
 	],
 	"assignments":[
 		{

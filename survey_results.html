@@ -5,13 +5,13 @@ title: "Intro Survey Results"
 
 <script src="{{site.baseurl}}/js/heatmap.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+<script src="{{site.baseurl}}/js/Chart.min.js/"></script>
 <script>
 	$(document).ready(function(){
 		//This is some of the dirtiest javascript I have ever written. I am pretty ashamed. This comment will make it all better.
 		d3.csv("{{site.basurl}}/files/week1/intro_survey.csv", function(data){
 			var cleanData = [];
-			var design_categories = ["Illustrator","Photoshop","Balsamiq","Inkscape","Sketch"];
+			var design_categories = ["InDesign","Illustrator","Photoshop","Balsamiq","Inkscape","Sketch"];
 			var sw_categories = ["iOS","Android","Java","C#/.NET","HTML/CSS","Javascript","Server Side JS","Rails","Python"];
 			var i=0;
 			var convertTextToNumber = function(toConvert){
@@ -42,6 +42,7 @@ title: "Intro Survey Results"
 				thisObject['topics']=thisEl['Any topics you think we should definitely cover?'];
 
 				thisObject['design']= [];
+				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Adobe InDesign]']));
 				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Adobe Illustrator]']));
 				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Adobe Photoshop]']));
 				thisObject['design'].push(convertTextToNumber(thisEl['How much experience do you have with the following software? [Balsamiq Mockups]']));

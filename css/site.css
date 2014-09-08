@@ -140,12 +140,13 @@ footer {
   /*border-top-color:lighten($lighter,15%);*/ }
 
 .student_radar {
-  margin-top: -60px;
+  margin-top: -40px;
   display: inline-block; }
 
 .student_responses {
   display: inline-block;
   vertical-align: top;
-  width: calc(100% - 400px); }
+  margin-left: 15px;
+  width: calc(100% - 415px); }
   .student_responses h4 {
     margin-bottom: 0; }

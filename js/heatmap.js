@@ -7,7 +7,7 @@ var heatmap = function(options){
     var config = {
         selector:'#heatmap',
         data:[],
-        margin:{top: 20, right: 80, bottom: 30, left: 100},
+        margin:{top: 20, right: 80, bottom: 30, left: 150},
         width:640,
         height:380
     }

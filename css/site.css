@@ -1,5 +1,5 @@
 .lighter {
-  color: #a2a2a2; }
+  color: #a2a2a2 !important; }
 
 ul.topics_list li {
   margin-bottom: 0 !important; }
@@ -114,7 +114,8 @@ ul li.assignment {
   margin-bottom: 50px; }
 
 .scrollable {
-  overflow: scroll; }
+  overflow: scroll;
+  /*background-color:white;*/ }
 
 footer {
   background-color: #f2f2f2;
@@ -124,7 +125,10 @@ footer {
   font-family: Helvetica;
   position: fixed;
   bottom: 0;
-  left: -160px;
-  margin-left: 160px;
-  padding-left: 160px;
-  width: 100%; }
+  left: -45px;
+  margin-left: 161px;
+  padding-left: 45px;
+  width: calc(100% - 161px);
+  /*border-top-width:1px;*/
+  /*border-top-style:solid;*/
+  /*border-top-color:lighten($lighter,15%);*/ }

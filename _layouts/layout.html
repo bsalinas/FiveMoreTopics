@@ -29,7 +29,7 @@
   <script>
       $(document).ready(function(){
         $('.sidebar .scrollable').css('height','calc(100% - '+($('.sidebar').height() - $('.sidebar .scrollable').height())+'px - 20px)');
-        $('.sidebar').css('height','calc(100% - 20px)');
+        $('.sidebar').css('height','100%');
       });
   </script>
 </head>
@@ -49,8 +49,8 @@
       <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
       <a href="{{site.baseurl}}/atom.xml"><i class="fa fa-rss"></i></a>
     </section>
-
-    <section class="sections">
+    <hr class="full">
+    <section class="sections scrollable">
       <ul>
         <li><a href="{{site.baseurl}}/index.html">updates</a></li>
         <li><a href="{{site.baseurl}}/overview.html">overview</a></li>
@@ -58,8 +58,6 @@
         <li><a href="{{site.baseurl}}/assignments.html">assignments</a></li>
       </ul>
       <hr>
-    </section>
-    <section class="sections scrollable">
         <ul class="topics_list">
         <li class="topic"><a href="{{site.baseurl}}/topics.html#process">process</a></li>
         {%assign last_topic = "process"%}
@@ -73,7 +71,7 @@
             {%assign last_topic = post.topic%}
           {%endif%}
           {%if post.draft == true%}
-            <li data-draft="true">{{post.date | date_to_string}}</li>
+            <li data-draft="true"><span class="lighter">{{post.date | date_to_string}}</span></li>
           {%else%}
             <li data-draft="false"><a href="{{site.baseurl}}{{post.url}}">{{post.date | date_to_string}}</a></li>
           {%endif%}

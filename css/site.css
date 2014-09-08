@@ -138,3 +138,13 @@ footer {
   /*border-top-width:1px;*/
   /*border-top-style:solid;*/
   /*border-top-color:lighten($lighter,15%);*/ }
+
+.student_radar {
+  margin-top: -60px;
+  display: inline-block; }
+
+.student_responses {
+  display: inline-block;
+  vertical-align: top; }
+  .student_responses h4 {
+    margin-bottom: 0; }

@@ -6,6 +6,9 @@
 	<div class="attachments">
 	{%for attachment in include.activity.attachments %}
 		{%if attachment.type == "link"%}
+		{%if attachment.location == "internal"%}
+		is internal
+		{%endif%}
 		<a class="btn" href="{%if attachment.location == "internal"%}{{site.baseurl}}{%endif%}{{attachment.link}}" target="_blank"><i class="fa fa-eye"></i> View {{attachment.title}} </a></li>
 		{%else%}
 		<a class="btn" href="{{site.baseurl}}/files/{{attachment.link}}" target="_blank"><i class="fa fa-download"></i> Download {{attachment.title}} </a></li>

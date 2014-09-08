@@ -58,6 +58,13 @@ li.topic{
 	line-height:1.2em;
 }
 #topics{
+	ol{
+		padding:0;
+		a{
+			color:initial;
+			text-decoration:none;
+		}
+	}
 	.topic{
 		.name{
 			.lighter{
@@ -92,6 +99,7 @@ ul{
 			display:inline-block;
 			position:relative;
 			.price{
+				font-family:Helvetica;
 				position:absolute;
 				/*left:2px;*/
 				top:40%;

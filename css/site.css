@@ -43,6 +43,11 @@ li.topic {
 #date_and_time {
   line-height: 1.2em; }
 
+#topics ol {
+  padding: 0; }
+  #topics ol a {
+    color: initial;
+    text-decoration: none; }
 #topics .topic .name .lighter {
   font-size: 0.75em; }
 
@@ -67,6 +72,7 @@ ul {
     display: inline-block;
     position: relative; }
     #textbooks .textbook .book_img .price {
+      font-family: Helvetica;
       position: absolute;
       /*left:2px;*/
       top: 40%;

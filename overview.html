@@ -10,13 +10,13 @@ title: "Overview"
 	  <br>1 Credit Course, Fall 2014, Olin College AC326
 	  <br>Tuesdays, 7:00 PM - 8:50 PM</p>
 	 <section id="description">
-	  <p>This course provides an introduction to several skills that are useful when designing software. The topics covered in the class augment those covered in other Olin design depths (such as ENGR 3220: HFID) and focuses on practical skills and general guidelines for designing beautiful and usable software. In particular, we will cover the basics of graphic design as it applies to software design, the importance of including real data in the design process, techniques for rapidly prototyping designs and how the software development process influences the user  experience of software.</p>
+	  <p>This course provides an introduction to several skills that are useful when designing software. The topics covered in the class augment those covered in other Olin design depths (such as <a href="http://hfid.olin.edu">ENGR 3220: HFID</a>) and focuses on practical skills and general guidelines for designing beautiful and usable software. In particular, we will cover the basics of graphic design as it applies to software design, the importance of including real data in the design process, techniques for rapidly prototyping designs and how the software development process influences the user  experience of software.</p>
   </section>
   <hr/>
 
   <section id="topics">
   <h2>Topics</h2>
-  During this course, we will be covering 5 major topics, outlined in detail on the <a href="{{site.baseurl}}/topics.html">topics page</a>
+  During this course, we will be covering 5 major topics (and one introductory one during the first week), outlined in detail on the <a href="{{site.baseurl}}/topics.html">topics page</a>
   		<ol start="0">
 	  {%for topic in site.data.topics%}
 		  	<a href="{{site.baseurl}}/topics.html#{{topic.id}}"><li>{{topic.name}}</li></a>
@@ -37,8 +37,11 @@ title: "Overview"
 		  		</p>
 	  		</div>
 	  		<div class="book_img">
+	  			
 	  			<a href="{{book.link}}"><img class = "" src="images/{{book.img}}"></img></a>
+	  			{%if book.price%}
 	  			<a class="price" href="{{book.link}}">{{book.price}}</a>
+	  			{%endif%}
 	  		</div>
   		</div>
   	{%endfor%}
@@ -55,7 +58,9 @@ title: "Overview"
 	  		</div>
 	  		<div class="book_img">
 	  			<a href="{{book.link}}"><img class = "" src="images/{{book.img}}"></img></a>
+	  			{%if book.price%}
 	  			<a class="price" href="{{book.link}}">{{book.price}}</a>
+	  			{%endif%}
 	  		</div>
   		</div>
   	{%endfor%}

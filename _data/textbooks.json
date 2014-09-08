@@ -33,6 +33,13 @@
 			"link":"http://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879/",
 			"img":"universal_principles.jpeg",
 			"description":"An encyclopedia of 125 principles that drive human perception of design. A good book to thumb through."
-		}
+		},
+		{
+			"name":"Hack Design",
+			"author":"<a href=\"http://hackdesign.org\">hackdesign.org</a>",
+			"link":"http://www.hackdesign.org",
+			"img":"hackdesign.png",
+			"description":"A collection of blog posts and articles on various subjects relating to software and interface design."
+		},
 	]
 }

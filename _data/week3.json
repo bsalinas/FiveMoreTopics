@@ -1,0 +1,22 @@
+{
+	"week":3,
+	"topic":"graphics",
+	"description":"",
+	"activities":[
+		{
+			"name":"Group Activity: Discuss What We Think Makes Things Visually Appealing",
+			"type":"group",
+			"time":20,
+			"description":"In your groups, discuss the screenshots you brought in. What makes them visually appealing? What makes them visually appalling? Think about the Consistency, Repetition, Alignment, and Proximity that was presented in the reading. Present one as a group.",
+			"instructor_notes":"Draw the alignment lines, Count the fonts, count the colors."
+		}
+	],
+	"assignments":[
+		{
+			"description":"If you haven’t used InDesign/Illustrator before: watch <a href=\"https://www.youtube.com/watch?v=JfhHvAscNFA\">https://www.youtube.com/watch?v=JfhHvAscNFA</a>",
+			"required":true,
+			"type":"video"
+		}
+	]
+	
+}

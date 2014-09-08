@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Week 1
+title: Week 2
 category: classes
 week: 2
 last_week: 1
 topic: graphics
-draft: true
+wip: true
 ---

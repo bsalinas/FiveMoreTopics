@@ -19,7 +19,7 @@
 			"description":"Review results of intro survey",
 			"attachments":[
 				{
-					"link":"/survey_results.html",
+					"link":"survey_results.html",
 					"title":"Survey Results",
 					"type":"link",
 					"location":"internal"

@@ -188,6 +188,15 @@ footer{
 	/*border-top-style:solid;*/
 	/*border-top-color:lighten($lighter,15%);*/
 }
+#design_heatmap,#sw_heatmap{
+	rect{
+		stroke:#e2e2e2;
+		stroke-opacity:0.25;
+		stroke-width:1px;
+
+	}	
+}
+
 .student_radar{
 	margin-top:-40px;
 	display:inline-block;

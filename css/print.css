@@ -1,0 +1,23 @@
+.sidebar{
+	display:none;
+}
+.content{
+	margin-left:1in;
+	max-width:calc(100% - 2in);
+}
+.btn::after{
+	content:attr(href);
+}
+
+footer{
+	position:relative;
+	width:100%;
+	margin-left:0;
+	padding-left:1in;
+	left:0;
+	background-color:white;
+	
+}
+footer p::after{
+		content:' - Questions:ben.salinas@gmail.com';
+	}

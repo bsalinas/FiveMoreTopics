@@ -13,4 +13,29 @@
 	{%endfor%}
 	</div>
 {%endif%}
+{%if include.activity.results%}
+	<div class="results">
+		<h4>Activity Results <a class="hide_link" href="#">(Hide All Results)</a></h4>
+
+		<p>{{include.activity.results.summary}}</p>
+		{%if include.activity.results.documents%}
+			<div data-collapsed="true" class="documents">
+			{%for document in include.activity.results.documents%}
+				<figure  class="document">
+					<img  src="{%if document.location == "internal"%}{{site.baseurl}}/{%endif%}{{document.link}}"/>
+					<figcaption>{{document.caption}}</figcaption>
+				</figure>
+			{%endfor%}
+			</div>
+		{%endif%}
+	</div>
+	{%if include.activity.results.meta%}
+		<div class="analysis">
+			<h4>Instructor Analysis <a class="hide_link" href="#">(Hide Instructor Analysis)</a></h4>
+
+			<p>{{include.activity.results.meta}}</p>
+		</div>
+	{%endif%}
+{%endif%}
+
 </div>

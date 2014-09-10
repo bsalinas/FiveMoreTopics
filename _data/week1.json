@@ -31,6 +31,24 @@
 			"name":"What is “Good Design?",
 			"time":20,
 			"description":"In your groups, discuss what makes a design \"good\" or \"bad\". As a group, list out 5 principles of good design.",
+			"results":{
+				"summary":"Each group had a slightly different take on the principles of good design, but in general they included: <ul><li>Usability</li><li>Functional</li><li>Aesthetically pleasing</li></ul> There was also a common idea around a piece of software being simple but complete. In the discussion, we talked a lot about the tradeoff between being powerful or being simple. Likewise, we discussed whether it is okay for software to be non-intuitive or hard to use at first. For this, we took the example of CAD software which on a whole is not necessarily intuitive, but has individual elements that are intuitive, especially after you have learned some of the common patterns.",
+				"documents":[
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"One group's take on the 5 most important principles of \"good software design\". ",
+						"link":"files/week1/good_design_01.jpg"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"Another group's take on the 5 most important principles of \"good software design\". ",
+						"link":"files/week1/good_design_02.jpg"
+					}
+				],
+				"meta":"This discussion went pretty well. Students seemed to have opinions about this subject. The discuss led to some really good discussions around the big tradeoffs in software design (i.e. easy to use the first time vs fast to use in the long term; simple vs powerful)."
+			}
 		},
 
 		{
@@ -44,13 +62,45 @@
 					"title":"Slides",
 					"type":"download"
 				}
-			]
+			],
+			"results":{
+				"summary":"This conversation stayed pretty high level. Across the board, everyone thought that user research and user testing was an important part of the process. Likewise, there was agreement that we needed to define what we wanted to build before we designed it. One of the big concepts was that you might bypass the left portion of the process if you already know what a piece of software is supposed to do. That is, that the context of the project might change the process. Much of the discussion around this process was driven by the Function, Interaction, Character triangle which is discussed in UOCD. It was suggested that you should start with identifying functionality, then mvoe on to interaction, and then end with aesthetics. Once again, the class realized that this might change based on the stage of the product lifecycle or other stakeholder requirements.",
+				"documents":[
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"The black text here outlines the \"process\" that we agreed on as a whole. There were quite a few more detailed ideas that we discussed, but did not capture on the whiteboard.",
+						"link":"files/week1/process_01.jpg"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"One group drew a diagram showing the feedback loops between various phases of the design process using Olin classes to describe the phases.",
+						"link":"files/week1/process_02.jpg"
+					}
+				],
+				"meta":"This went pretty well, but I tried to synthesize all of the work into a single process diagram. Instead, I should have had each group present their own process diagrams and then discussed the differences as a large group. This activity also lacked a \"correct\" answer at the end. It felt a little weak to just say \"There isn't any one correct answer\". I should have been more assertive with some of the process that I tend to use."
+			}
+
 
 		},
 		{
 			"name":"Software Design Artifacts",
 			"time":20,
-			"description":"Based on your listing of design phases from before, discuss what design artifacts look like throughout the different phases. What tools should you be using?"
+			"description":"Based on your listing of design phases from before, discuss what design artifacts look like throughout the different phases. What tools should you be using?",
+			"results":{
+				"summary":"This conversation was dominated by the idea of sketches, low-fidelity wireframes, and prototypes. After some pushing, we got the ideas around mapping out user flows or site information as well as the need for requirements.",
+				"documents":[
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"As a group we listed out various artifacts that might occur during the design process. We then outlined, in green, what tools you might use to generate those. We intentionally skipped the user profiles section since that is covered in depth elsewhere in the curriculum.",
+						"link":"files/week1/artifacts_01.jpg"
+					}
+				],
+				"meta":"All in all, this activity was pretty short and absent of having an \"answer\" to show, didn't provide much value. If we do this again, the instructor should provide more of a framework around these artifacts as well as a list at the end"
+			}
+
 		}
 
 	],

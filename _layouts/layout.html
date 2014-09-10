@@ -32,12 +32,74 @@
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
   <link rel="icon" href="{{site.baseurl}}/favicon.ico?v=2" type="image/x-icon">
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{ site.github.url }}/js/application.js"></script>
   <script>
       $(document).ready(function(){
         $('.sidebar .scrollable').css('height','calc(100% - '+($('.sidebar').height() - $('.sidebar .scrollable').height())+'px - 20px)');
         $('.sidebar').css('height','100%');
+
+
+        var toggleSpecialContent= function(name, show){
+          localStorage.setItem('set_'+name, show);
+          $('input[name="'+name+'"]').prop('checked',show)
+          console.log(name)
+          if(name == "analysis"){
+            if(show){
+              $('.analysis').show();
+            }
+            else{
+              $('.analysis').hide();
+            }
+          }
+          else if(name == "results"){
+            if(show){
+              $('.results').show();
+            }
+            else{
+              $('.results').hide();
+            }
+
+          }
+        }
+        console.log(localStorage.getItem('set_analysis'));
+        if(localStorage.getItem('set_analysis') == 'true' ){
+          console.log('analysis');
+          toggleSpecialContent('analysis',true);
+        }  
+        if(localStorage.getItem('set_results') == 'true'){
+          console.log('results');
+          toggleSpecialContent('results',true);
+        }
+
+        
+        $('[data-checkbox-name]').click(function(e){
+          $checkbox = $('input[name="'+$(this).attr('data-checkbox-name')+'"]');
+          if($checkbox.prop('checked')){
+            toggleSpecialContent($(this).attr('data-checkbox-name'), false);
+          }else{
+            toggleSpecialContent($(this).attr('data-checkbox-name'),true)
+          }
+        });
+        $('.results .hide_link').click(function(e){
+          e.preventDefault();
+          toggleSpecialContent('results', false);
+        })
+        $('.analysis .hide_link').click(function(e){
+          e.preventDefault();
+          toggleSpecialContent('analysis', false);
+        })
+
+        $('.results img').click(function(e){
+          console.log('abc');
+          $documents = $(this).parent().parent();
+          console.log($documents);
+          if($documents.attr('data-collapsed') == "true"){
+            $documents.attr('data-collapsed','false');
+          }else{
+            $documents.attr('data-collapsed','true');
+          }
+        })
       });
   </script>
   {% if site.github %}
@@ -99,6 +161,12 @@
       </ul>
     </section>
   </section>
+  <header>
+    <div class="options">
+      <input type="checkbox" name="results" value="Show"><label data-checkbox-name="results">Show Student Results</label>
+      <input type="checkbox" name="analysis" value="Show"><label data-checkbox-name="analysis">Show Instructor Analysis</label>
+    </div>
+  </header>
 
   {{ content }}
   <footer>

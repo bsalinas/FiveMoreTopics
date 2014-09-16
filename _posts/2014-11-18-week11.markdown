@@ -4,6 +4,6 @@ title: Week 11
 category: classes
 week: 11
 last_week: 10
-topic: development
+topic: data_viz
 draft: true
 ---

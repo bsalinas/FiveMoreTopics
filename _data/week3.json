@@ -19,9 +19,14 @@
 	],
 	"assignments":[
 		{
-			"name":"",
-			"type":"",
-			"description":""
+			"description":"Read Chapter 1: Understanding Data of <em>Data Points: Visualization That Means Something</em>",
+			"required":true,
+			"type":"reading"
+		},
+		{
+			"description":"Bring in a dataset that is relevant to you",
+			"required":true,
+			"type":"bring"
 		}
 		
 	]

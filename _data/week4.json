@@ -7,26 +7,42 @@
 			"name":"The Importance of Designing With Real Data",
 			"type":"lecture",
 			"time":20,
-			"description":""
+			"description":"Lorem Ipsum is a disease that plagues the design world. In this lecture, we will go through why it is critical to include real data in your designs as early as possible"
 
 		},
 		{ 
-			"name":"Spot The Fake Data",
+			"name":"Characteristics of Real Data",
 			"type":"lecture",
-			"time":10,
-			"description":""
-
+			"time":15,
+			"description":"Real Data has a story. It is your job to understand and extract that story and align it with the user's goals.",
+			"instructor_notes":"Need to add in the idea of data having multiple layers of interesting."
 		},
-		{ 
-			"name":"Craft a Dataset",
+		{
+			"name":"Extracting Information and Knowledge from Data",
 			"type":"group",
 			"time":30,
-			"description":""
-
+			"description":"As a group, take the provided dataset and dig into it. What did you learn about it? What tools did you use?",
+			"instructor_notes":"data -> info -> knowledge"
+		},
+		{
+			"name":"Crafting Data Sets",
+			"type":"lecture+activity",
+			"time":30,
+			"description":"",
+			"instructor_notes":"knowledge -> info -> data"
 		}
 	],
 	"assignments":[
-		
+		{
+			"description":"Craft a dataset. Each of you will be given...",
+			"required":true,
+			"type":"activity"
+		},
+		{
+			"description":"",
+			"required":true,
+			"type":"reading"
+		}
 	]
 	
 }

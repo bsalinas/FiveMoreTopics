@@ -36,7 +36,7 @@
 		"short_name":"real data",
 		"name":"Designing With Real Data",
 		"description":"When designing experiences that require users to make actionable decisions, it is virtually impossible to evaluate the success or failure of a design without real data present in the mockup or prototype. This is why designing with real data is critical to evaluating the success of a design. During this section, we will look at how to gather real data, understand that data and how to integrate it into your designs",
-		"time":[4,5],
+		"time":[4,5,6],
 		"subtopics":[
 			{"name":"The importance of designing with real data"},
 			{"name":"Real data has a story!"},
@@ -56,7 +56,7 @@
 		"number":3,
 		"name":"Rapidly Prototyping Software Experiences",
 		"description":"As software becomes more and more interactive, the modern software designer can no longer afford to hide behind the static mockup. Some experiences can only be truly evaluated by interacting with a prototype of a design or experience. But not all prototypes are created equally. We will look at how to decide when to prototype and what to prototype. We will also cover specific techniques for building interactive prototypes very quickly.",
-		"time":[6,7,8],
+		"time":[7,8],
 		"subtopics":[
 			{"name":"Determining the goal of a prototype"},
 			{"name":"Choosing the correct tools for a prototype"},
@@ -73,7 +73,7 @@
 		"number":4,
 		"name":"Data Visualization",
 		"description":"Data Visualization is becoming a critical part of modern applications so it is important for software designers to understand how to design successful and accurate visualizations. We will go through techinques for data visualizations, review Edward Tufte's principles of data visualization and look at some tools for building interactive data visualizations",
-		"time":[9,10],
+		"time":[9,10,11],
 		"subtopics":[
 			{"name":"Tufte Principles"},
 			{"name":"Types of information and the different visualizations techniques for that information"},
@@ -91,7 +91,7 @@
 		"number":5,
 		"name":"Software Development",
 		"description":"What you design doesn't matter until it is actually built. In the same way that an architect needs to understand how buildings are built in order to design them, software designers need to understand how software is built. During this section we will look at modern web and mobile architectures and discuss how these technology choices should influence the design process. Additionally, we will look at how to break down designs into a development plan",
-		"time":[11,12,13],
+		"time":[12,13],
 		"subtopics":[
 			{"name":"Common Application Architectures"},
 			{"name":"Software Development Process"},

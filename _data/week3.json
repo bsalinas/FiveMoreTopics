@@ -18,7 +18,11 @@
 		}
 	],
 	"assignments":[
+		{
+			"name":"",
+			"type":"",
+			"description":""
+		}
 		
 	]
-	
 }

@@ -1,0 +1,17 @@
+{
+	"week":5,
+	"topic":"realdata",
+	"description":"",
+	"activities":[
+		{ 
+			"name":"Design Axioms",
+			"type":"lecture",
+			"time":60,
+			"description":"Juhan Sonin, Creative Director of Involution Studios, will talk about the Design Axioms."
+		}
+	],
+	"assignments":[
+		
+	]
+	
+}

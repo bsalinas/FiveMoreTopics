@@ -4,6 +4,12 @@
 	"description":"This week, we start exploring some of the principles of graphic design as they relate to software design. We will extend the concepts presented in <em>The Non-Designer's Design Book</em> with some general rules. As with any rules, we will also discuss when to break the rules.",
 	"activities":[
 		{
+			"name":"One More Process Example",
+			"type":"lecture",
+			"time":10,
+			"description":"So that you have another example, we'll walk through, briefly, the design process we use at Involution and look at some examples of design artifacts."
+		},
+		{
 			"name":"Group Activity: Discuss What We Think Makes Things Visually Appealing",
 			"type":"group",
 			"time":20,
@@ -48,6 +54,11 @@
 		},
 		{
 			"description":"Read Chapter 7: Using Color of <em>The Non-Designer's Design Book</em>",
+			"required":false,
+			"type":"reading"
+		},
+		{
+			"description":"Read about Typography in Chapters 9-11 of <em>The Non-Designer's Design Book</em>",
 			"required":false,
 			"type":"reading"
 		}

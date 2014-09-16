@@ -1,0 +1,32 @@
+{
+	"week":4,
+	"topic":"realdata",
+	"description":"",
+	"activities":[
+		{ 
+			"name":"The Importance of Designing With Real Data",
+			"type":"lecture",
+			"time":20,
+			"description":""
+
+		},
+		{ 
+			"name":"Spot The Fake Data",
+			"type":"lecture",
+			"time":10,
+			"description":""
+
+		},
+		{ 
+			"name":"Craft a Dataset",
+			"type":"group",
+			"time":30,
+			"description":""
+
+		}
+	],
+	"assignments":[
+		
+	]
+	
+}

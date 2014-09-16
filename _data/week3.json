@@ -1,14 +1,20 @@
 {
 	"week":3,
 	"topic":"graphics",
-	"description":"",
+	"description":"This week's class will primarily focus on an exercise to put into practice some of the techniques we discussed last week. We will, however, start with a short discussion about some more tools to help organize your design.",
 	"activities":[
-		{
-			"name":"Group Activity: Discuss What We Think Makes Things Visually Appealing",
-			"type":"group",
+		{ 
+			"name":"Designing With Grids",
+			"type":"lecture",
 			"time":20,
-			"description":"In your groups, discuss the screenshots you brought in. What makes them visually appealing? What makes them visually appalling? Think about the Consistency, Repetition, Alignment, and Proximity that was presented in the reading. Present one as a group.",
-			"instructor_notes":"Draw the alignment lines, Count the fonts, count the colors."
+			"description":"Grids can be a powerful tool for designing software. Knowing how to use them can greatly improve the order of designs and accelerate development timelines."
+
+		},
+		{
+			"name":"Redesign Search Results",
+			"type":"group",
+			"time":80,
+			"description":"In groups of 2-3, take a stab at redesigning the Amazon.com search results."
 		}
 	],
 	"assignments":[

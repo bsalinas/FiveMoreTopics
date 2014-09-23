@@ -3,12 +3,11 @@
 	"topic":"realdata",
 	"description":"",
 	"activities":[
-		{ 
-			"name":"The Importance of Designing With Real Data",
-			"type":"lecture",
-			"time":20,
-			"description":"Lorem Ipsum is a disease that plagues the design world. In this lecture, we will go through why it is critical to include real data in your designs as early as possible"
-
+		{
+			"name":"Present your Dataset",
+			"type":"group",
+			"time":15,
+			"description":"Give a 1 minute overview of your dataset"
 		},
 		{ 
 			"name":"Characteristics of Real Data",
@@ -34,12 +33,12 @@
 	],
 	"assignments":[
 		{
-			"description":"Craft a dataset. Each of you will be given...",
+			"description":"Craft a few sample datasets. Individually or with one other person, practice crafting a realistic dataset. The result should be a CSV file and a description of why that dataset is \"realistic\". This is a 2 week assignment",
 			"required":true,
 			"type":"activity"
 		},
 		{
-			"description":"",
+			"description":"TBD. Read something.",
 			"required":true,
 			"type":"reading"
 		}

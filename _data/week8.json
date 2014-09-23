@@ -1,0 +1,17 @@
+{
+	"week":8,
+	"topic":"prototyping",
+	"description":"The native medium of software designs is code.",
+	"activities":[
+		{
+			"name":"Introduction to jQuery, SCSS, HTML",
+			"time":30,
+			"description":"A cursory and "
+		}
+		
+	],
+	"assignments":[
+		
+	]
+	
+}

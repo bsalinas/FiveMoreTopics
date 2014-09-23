@@ -1,0 +1,17 @@
+{
+	"week":9,
+	"topic":"data_viz",
+	"description":"The native medium of software designs is code.",
+	"activities":[
+		{
+			"name":"Introduction to d3.js",
+			"time":45,
+			"description":"Adam Pere, software engineer at Involution Studios, will provide an introduction to d3.js, a powerful visualization library."
+		}
+		
+	],
+	"assignments":[
+		
+	]
+	
+}

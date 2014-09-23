@@ -1,20 +1,39 @@
 {
 	"week":3,
 	"topic":"graphics",
-	"description":"This week's class will primarily focus on an exercise to put into practice some of the techniques we discussed last week. We will, however, start with a short discussion about some more tools to help organize your design.",
+	"description":"This week's class will primarily focus on an exercise to put into practice some of the techniques we discussed last week. We will, however, start with a short discussion about some more tools to help organize your design. The class will end with an intro to the next topic we will be covering in class",
 	"activities":[
 		{ 
 			"name":"Designing With Grids",
 			"type":"lecture",
-			"time":20,
-			"description":"Grids can be a powerful tool for designing software. Knowing how to use them can greatly improve the order of designs and accelerate development timelines."
-
+			"time":10,
+			"description":"Grids can be a powerful tool for designing software. Knowing how to use them can greatly improve the order of designs and accelerate development timelines.",
+			"attachments":[
+				{
+					"link":"week3/grid_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
 		},
 		{
 			"name":"Redesign Search Results",
 			"type":"group",
-			"time":80,
+			"time":60,
 			"description":"In groups of 2-3, take a stab at redesigning the Amazon.com search results."
+		},
+		{ 
+			"name":"The Importance of Designing With Real Data",
+			"type":"lecture",
+			"time":20,
+			"description":"Lorem Ipsum is a disease that plagues the design world. In this lecture, we will go through why it is critical to include real data in your designs as early as possible",
+			"attachments":[
+				{
+					"link":"week3/real_data_slides_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
 		}
 	],
 	"assignments":[
@@ -24,10 +43,9 @@
 			"type":"reading"
 		},
 		{
-			"description":"Bring in a dataset that is relevant to you",
+			"description":"Bring in a dataset that is relevant to you. Examples include your location history for a few days, e-mails you have received over a time period, or length of recent phone calls. Pull out from the dataset one particularly interesting insight. Send Ben a slide with some representation of that dataset.",
 			"required":true,
 			"type":"bring"
-		}
-		
+		}	
 	]
 }

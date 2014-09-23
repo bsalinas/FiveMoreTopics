@@ -14,7 +14,10 @@
 			"type":"group",
 			"time":20,
 			"description":"In your groups, discuss the screenshots you brought in. What makes them visually appealing? What makes them visually appalling? Think about the Consistency, Repetition, Alignment, and Proximity that was presented in the reading. Present one as a group.",
-			"instructor_notes":"Draw the alignment lines, Count the fonts, count the colors."
+			"results":{
+				"summary":"In this discussion, we went through the examples students brought in. We found that many of the \"visually pleasing\" examples that were shown are actually relatively simple websites without much content (for instance Apple's website or Coin's website). Another example was a GNU command line manual, which presents information very succintly but does not actually look very nice.",
+				"meta":"This discussion went pretty well. I made the mistake of not requiring students to bring in examples of screens (In fact, I explicitly said that it didn't have to be software). This cause some issues because we were trying to use some of the more software based principles to judge photos. It was also helpful to have some examples prepared myself."
+			}
 		},
 		{
 			"name":"Lecture: Achieving Structure and Visual Hierarchy",
@@ -33,12 +36,46 @@
 					"title":"Slides",
 					"type":"download"
 				}
-			]
+			],
+			"results":{
+				"meta":"This lecture went pretty well. I think there was a good balance of examples and rules of thumb. I wish I had gotten into a few more software based principles (such as drawing attention towards actions we want to take)."
+			}
 		},
 		{
 			"name":"Group Activity: Critique a Screen",
 			"time":30,
-			"description":"Each group will be given a web site and a large printout of a particular screen. Based on the lecture, make suggestions of how to improve the design."
+			"description":"Each group will be given a web site and a large printout of a particular screen. Based on the lecture, make suggestions of how to improve the design.",
+			"attachments":[
+				{
+					"link":"week2/weather_screens.pdf",
+					"title":"Example Screens",
+					"type":"download"
+				}
+			],
+			"results":{
+				"summary":"Different groups of students took different approaches to this discussion. All together, most students cited the lack of visual hierarchy in the examples. Likewise, alignment and the overuse of fonts came up quite a bit. There was also a common thread about how the ads on a screen often fight for the attention.",
+				"documents":[
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"Counting fonts on weather.com. ",
+						"link":"files/week2/weather_dot_com.jpg"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"This group identified the lack of spacing in the top left weather presentation as a problem.",
+						"link":"files/week2/intellicast.jpg"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"This group generally liked what Yahoo has to offer.",
+						"link":"files/week2/yahoo.jpg"
+					}
+				],
+				"meta":"This exercise went quite well. It gave students a chance to practice some of the techniques we had discussed. I think it was good to print out the screens on large paper (24in x 24in)."
+			}
 		}
 	],
 	"assignments":[

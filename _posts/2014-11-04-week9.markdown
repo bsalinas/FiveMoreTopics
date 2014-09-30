@@ -4,6 +4,6 @@ title: Week 9
 category: classes
 week: 9
 last_week: 8
-topic: data_viz
+topic: prototyping
 draft: true
 ---

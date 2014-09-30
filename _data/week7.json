@@ -3,7 +3,13 @@
 	"topic":"prototyping",
 	"description":"The native medium of software designs is code.",
 	"activities":[
-		
+		{
+			"name":"Prototyping and Testing Designs and Ideas: Ross Beyeler, Growth Spark",
+			"type":"lecture",
+			"time":40,
+			"description":"Ross Beyeler is the founder of local web design and strategy firm <a href=\"http://www.growthspark.com\">Growth Spark</a>. Ross, who graduated from Babson in 2009, will be speaking about how Growth Spark tests ideas and designs from a usability and business value perspective."
+		}
+			
 	],
 	"assignments":[
 		

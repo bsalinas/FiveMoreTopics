@@ -11,7 +11,9 @@
 		}
 	],
 	"assignments":[
-		
+		{
+			"description":"Take one of the datasets that you have gathered. Design a simple screen around that data which presents the data. Good candidates are search results, tables, or profile screens."
+		}
 	]
 	
 }

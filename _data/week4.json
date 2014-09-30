@@ -12,35 +12,50 @@
 		{ 
 			"name":"Characteristics of Real Data",
 			"type":"lecture",
-			"time":15,
+			"time":10,
 			"description":"Real Data has a story. It is your job to understand and extract that story and align it with the user's goals.",
-			"instructor_notes":"Need to add in the idea of data having multiple layers of interesting."
+			"attachments":[
+				{
+					"link":"week4/understanding_data_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
 		},
 		{
-			"name":"Extracting Information and Knowledge from Data",
+			"name":"Gathering Real Data",
+			"type":"demo",
+			"time":30,
+			"description":"Oftentimes we can see the data we want to include in our design somewhere on the internet. During this demo, we'll walk through a few tools to actually go and grab that data. As part of that, we'll look at one example of what you might do once you have the data.",
+			"attachments":[
+				{
+					"link":"week4/tools_for_data_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
+		},
+		{
+			"name":"Scrape Some Data",
 			"type":"group",
 			"time":30,
-			"description":"As a group, take the provided dataset and dig into it. What did you learn about it? What tools did you use?",
-			"instructor_notes":"data -> info -> knowledge"
-		},
-		{
-			"name":"Crafting Data Sets",
-			"type":"lecture+activity",
-			"time":30,
-			"description":"",
-			"instructor_notes":"knowledge -> info -> data"
+			"description":"In your group, work together to scrape some data using the tools we just discussed. Here are a few links that you might try.<ul>
+				<li>Grab attendees of particular conferences at <a href=\"www.lanyrd.com\">Lanyrd</a></li>
+				<li>Get telephone numbers at <a href=\"http://www.yellowpages.com/\">Yellow Pages</a></li>
+				<li>Get restuarant details at <a href=\"http://www.yelp.com/\">Yelp</a></li>
+				<li>Get tweets from <a href=\"http://www.twitter.com/\">Twitter</a></li>
+				<li>Grab weather data from <a href=\"http://www.weather.com/\">Weather.com</a></li>
+				<li>Get e-mail subjects from <a href=\"http://gmail.com/\">Gmail</a></li>
+				<li>Get calendar appointments from <a href=\"https://www.google.com/calendar/\">Google Calendar</a></li>
+				<li>Get products from a search on <a href=\"http://www.amazon.com/\">Amazon</a></li>
+				<li>Gather data about security vulnerabilities from <a href=\"http://nvd.nist.gov/\">the National Vulnerability Database</a></li>
+				<li>Gather release activity or commit analytics or tags from <a href=\"http://github.com\">Github</a></li>
+				</ul>"
 		}
 	],
 	"assignments":[
 		{
-			"description":"Craft a few sample datasets. Individually or with one other person, practice crafting a realistic dataset. The result should be a CSV file and a description of why that dataset is \"realistic\". This is a 2 week assignment",
-			"required":true,
-			"type":"activity"
-		},
-		{
-			"description":"TBD. Read something.",
-			"required":true,
-			"type":"reading"
+			"description":"Using some of the tools we used in class, gather data for 3+ sources. Keep in mind that it might not be feasible to actually gather data using the tools we discussed from every website. Get the data to the point where you can visualize it in some manner. This could be a simple plot in MATLAB or Excel or using the InDesign DataMerge feature to show the information. The assignment for next week will have you use this data to design a screen."
 		}
 	]
 	

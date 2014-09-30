@@ -3,10 +3,27 @@
 	"topic":"realdata",
 	"description":"This week, we focus on extracting data from the internet and cleansing that data as well as explore some techniques for integrating that data into designs.",
 	"activities":[
-		
+		{
+			"name":"Extracting Information and Knowledge from Data",
+			"type":"group",
+			"time":30,
+			"description":"As a group, take the provided dataset and dig into it. What did you learn about it? What tools did you use?",
+			"instructor_notes":"data -> info -> knowledge; Ideas for datasets: Olin Courses, "
+		},
+		{
+			"name":"Crafting Data Sets",
+			"type":"lecture+activity",
+			"time":30,
+			"description":"",
+			"instructor_notes":"knowledge -> info -> data"
+		}
 	],
 	"assignments":[
-		
+		{
+			"description":"Craft a few sample datasets. Individually or with one other person, practice crafting a realistic dataset. The result should be a CSV file and a description of why that dataset is \"realistic\". This is a 2 week assignment",
+			"required":true,
+			"type":"activity"
+		},
 	]
 	
 }

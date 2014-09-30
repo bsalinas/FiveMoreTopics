@@ -14,13 +14,40 @@
 					"title":"Slides",
 					"type":"download"
 				}
-			]
+			],
+			"results":{
+				"meta":"This talk wasn't the best."
+			}
 		},
 		{
 			"name":"Redesign Search Results",
 			"type":"group",
 			"time":60,
-			"description":"In groups of 2-3, take a stab at redesigning the Amazon.com search results."
+			"description":"In groups of 2-3, take a stab at redesigning the Amazon.com search results.",
+			"results":{
+				"summary":"Many of the groups came up with the vision of making the search results simpler by taking out information that is currently there. This led to an interesting discussion as to how the information got there in the first place.",
+				"documents":[
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"One group's cursory redesign of the Amazon search results",
+						"link":"files/week3/amazon_01.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"One group's cursory redesign of the Amazon search results",
+						"link":"files/week3/amazon_02.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"One group's cursory redesign of the Amazon search results",
+						"link":"files/week3/amazon_03.png"
+					}
+				],
+				"meta":"This activity was too short and open ended to be effective. It was hard for the students to get beyond the most basic of concepts in their designs. That being said, it did seem like the students were having relevant conversations and were trying to consciously make design decisions. In future iterations, it might be nice to seed the students with an application frame, or provide some more constraints around what needed to be displayed."
+			}
 		},
 		{ 
 			"name":"The Importance of Designing With Real Data",

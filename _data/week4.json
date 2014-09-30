@@ -1,7 +1,7 @@
 {
 	"week":4,
 	"topic":"realdata",
-	"description":"",
+	"description":"This week we are diving into techniques for gathering real data and incorporating it into your designs.",
 	"activities":[
 		{
 			"name":"Present your Dataset",

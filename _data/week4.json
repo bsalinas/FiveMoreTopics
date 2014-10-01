@@ -118,7 +118,12 @@
 	"assignments":[
 		{
 			"description":"Using some of the tools we used in class, gather data for 3+ sources. Keep in mind that it might not be feasible to actually gather data using the tools we discussed from every website. Get the data to the point where you can visualize it in some manner. This could be a simple plot in MATLAB or Excel or using the InDesign DataMerge feature to show the information. The assignment for next week will have you use this data to design a screen."
+		},
+		{
+			"description":"Review CSS selectors, if you aren't familiar with them. <a href=\"http://www.sitepoint.com/web-foundations/css-selectors/\">SitePoint</a> has a good resource. <a href=\"http://flukeout.github.io/\">This app</a> also has a really cute and fun way to test your selector skills",
+			"required":false
 		}
+
 	]
 	
 }

@@ -7,7 +7,61 @@
 			"name":"Present your Dataset",
 			"type":"group",
 			"time":15,
-			"description":"Give a 1 minute overview of your dataset"
+			"description":"Give a 1 minute overview of your dataset",
+			"results":{
+				"summary":"Students came up with some great datasets to showcase",
+				"documents":[
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"Activity peaks on the weekends. The low points are when he is sitting in his SCOPE workspace all day",
+						"link":"files/week4/datasets/activity.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"Mobile data usage was really high during his internship, almost none during vacation and is starting to get back to normal",
+						"link":"files/week4/datasets/data.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"The internships one student applied to last year",
+						"link":"files/week4/datasets/internships.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"The number of photos taken over the summer",
+						"link":"files/week4/datasets/photos.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"Location data highlights weekend trips in Seattle",
+						"link":"files/week4/datasets/seattle.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"Sleep data for one student, showing the hours slept each night",
+						"link":"files/week4/datasets/sleep1.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"The quality of sleep for the same student is highly coorrelated to the amount of sleep each night",
+						"link":"files/week4/datasets/sleep2.png"
+					},
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"A different student's sleep data over the last two and a half years highlights that they sleep more as an upper classman",
+						"link":"files/week4/datasets/SleepData.png"
+					}
+				],
+				"meta":"It was really neat to see the datasets the students came up with. They provided a good introduction to characteristics of real data."
+			}
 		},
 		{ 
 			"name":"Characteristics of Real Data",
@@ -33,7 +87,11 @@
 					"title":"Slides",
 					"type":"download"
 				}
-			]
+			],
+			"results":{
+				"summary":"This talk outlined how to use Kimono, Screen Scraper, and Sublime Text to gather and edit data.",
+				"meta":"The planned demo for this talk didn't work as planned, but the talk was still effective overall."
+			}
 		},
 		{
 			"name":"Scrape Some Data",
@@ -50,7 +108,11 @@
 				<li>Get products from a search on <a href=\"http://www.amazon.com/\">Amazon</a></li>
 				<li>Gather data about security vulnerabilities from <a href=\"http://nvd.nist.gov/\">the National Vulnerability Database</a></li>
 				<li>Gather release activity or commit analytics or tags from <a href=\"http://github.com\">Github</a></li>
-				</ul>"
+				</ul>",
+				"results":{
+				"summary":"Students did a very good job of scraping data from many of the websites listed above.",
+				"meta":"This activity went pretty well. Shortly after starting I realized that I should have provided an introduction to CSS selectors. There were lots of questions, but I could tell that students were getting more comfortable with the tools over the course of the activity."
+			}
 		}
 	],
 	"assignments":[

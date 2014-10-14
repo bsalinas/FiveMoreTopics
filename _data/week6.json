@@ -7,20 +7,59 @@
 			"name":"Extracting Information and Knowledge from Data",
 			"type":"group",
 			"time":30,
-			"description":"As a group, take the provided dataset and dig into it. What did you learn about it? What tools did you use?",
-			"instructor_notes":"data -> info -> knowledge; Ideas for datasets: Olin Courses, "
+			"description":"As a group, take one or two of the datasets below and dig into it. What did you learn about it? What stories, big or small, did you uncover? 
+				<ul>
+					<li><a href=\"http://bost.ocks.org/mike/sankey/\">Energy Usage</a></li>
+					<li><a href=\"http://flightaware.com/miserymap/\">Flight Delays</a></li>
+					<li><a href=\"https://blog.wealthfront.com/startup-employee-equity-compensation/\">Startup Employee Compensation</a></li>
+					<li><a href=\"http://www.goinvo.com/features/ebola/\">Ebola Outbreak</a></li>
+					<li><a href=\"http://idilernia.com/fun/radio2.html\">Radio Frequency Traffic</a></li>
+					<li><a href=\"http://www.nytimes.com/2014/08/16/upshot/mapping-migration-in-the-united-states-since-1900.html\">US Migration by State</a>, <a href=\"http://www.nytimes.com/interactive/2014/08/13/upshot/where-people-in-each-state-were-born.html\">US Migration Over Time</a></li>
+					<li><a href=\"http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html\">Tech IPOs</a></li>
+					<li><a href=\"http://www.nytimes.com/interactive/2014/06/05/upshot/how-the-recession-reshaped-the-economy-in-255-charts.html\">Recession Recovery</a></li>
+					<li><a href=\"http://www.nytimes.com/interactive/2014/05/11/upshot/up-soccer-table.html\">English Football Teams</a></li>
+					<li><a href=\"http://www.education-inequalities.org/indicators/edu4#?sort=mean&dimension=all&group=all&age_group=edu4_20&countries=all\">Economic Development Data</a></li>
+				</ul>"
 		},
 		{
-			"name":"Crafting Data Sets",
-			"type":"lecture+activity",
-			"time":30,
-			"description":"",
-			"instructor_notes":"knowledge -> info -> data"
+			"name":"The Basics of Crafting Data Sets",
+			"type":"lecture",
+			"time":20,
+			"description":"You don't always have access to the data you want for a design. In this lecture, we'll cover some methods for crafting datasets that are realistic.",
+			"instructor_notes":"knowledge -> info -> data",
+			"attachments":[
+				{
+					"link":"week6/crafting_data_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
+		},
+		{
+			"name":"Craft a Dataset",
+			"type":"activity",
+			"time":40,
+			"description":"Choose a few of the datasets listed below. Craft realistic datasets for them:
+			<ul>
+				<li>High and Low Temperatures in Boston for several weeks</li>
+				<li>Calendar appointments</li>
+				<li>Commit activity for an open source project</li>
+				<li>Commit activity for an individual</li>
+				<li>Open hours for a bunch of restaurants</li>
+				<li>Football team standings</li>
+				<li>Numbers of comments/likes on social media posts</li>
+			</ul>",
+			"instructor_notes":"knowledge -> info -> data"	
 		}
 	],
 	"assignments":[
 		{
-			"description":"Craft a few sample datasets. Individually or with one other person, practice crafting a realistic dataset. The result should be a CSV file and a description of why that dataset is \"realistic\". This is a 2 week assignment",
+			"description":"Craft a few sample datasets. Individually or with one other person, practice crafting a realistic dataset. The result should be a CSV file and a description of why that dataset is \"realistic\".",
+			"required":true,
+			"type":"activity"
+		},
+		{
+			"description":"Learn a bit of HTML + CSS: If you aren't familiar with HTML, spend a bit of time getting up to speed on it. You should know these tags: div, span, h1, p, ul, ol, li. Likewise, you should know how to do basic styling in CSS. I have enjoyed using <a href=\"http://www.codeschool.com\">Code School</a> but I have also heard good things about <a href=\"http://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1\">Codecademy</a>. There's probably also a million other things out there. If you are having trouble, shoot me an e-mail and we can do a session together.",
 			"required":true,
 			"type":"activity"
 		},

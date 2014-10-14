@@ -1,7 +1,7 @@
 {
 	"week":6,
 	"topic":"realdata",
-	"description":"This week, we focus on extracting data from the internet and cleansing that data as well as explore some techniques for integrating that data into designs.",
+	"description":"This week, we focus on extracting stories from data and crafting data sets (for those times when you don't have access to data)",
 	"activities":[
 		{
 			"name":"Extracting Information and Knowledge from Data",

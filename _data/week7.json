@@ -7,11 +7,18 @@
 			"name":"Prototyping and Testing Designs and Ideas: Ross Beyeler, Growth Spark",
 			"type":"lecture",
 			"time":40,
-			"description":"Ross Beyeler is the founder of local web design and strategy firm <a href=\"http://www.growthspark.com\">Growth Spark</a>. Ross, who graduated from Babson in 2009, will be speaking about how Growth Spark tests ideas and designs from a usability and business value perspective."
-		}
-			
+			"description":"Ross Beyeler is the founder of local web design and strategy firm <a href=\"http://www.growthspark.com\">Growth Spark</a>. Ross, who graduated from Babson in 2009, will be speaking about how Growth Spark tests ideas and designs from a usability and business value perspective.",
+		},
+		{
+			"name":"Introduction to jQuery, CSS, HTML",
+			"time":50,
+			"description":"A cursory and (hopefully) practical introduction to HTML, CSS, jQuery and maybe a few other javascript libraries thrown in for good measure."
+		}			
 	],
 	"assignments":[
+		{
+			"description":"Layout a resume or home page in HTML and CSS. The goal of this exercise is to get you familiar with some of the intricacies of HTML and CSS. If you are already comfortable in HTML/CSS, feel free to go deeper."
+		}
 		
 	]
 	

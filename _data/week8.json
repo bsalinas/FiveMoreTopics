@@ -4,14 +4,24 @@
 	"description":"The native medium of software designs is code.",
 	"activities":[
 		{
-			"name":"Introduction to jQuery, SCSS, HTML",
-			"time":30,
+			"name":"Deciding what to prototype?",
+			"time":25,
+			"description":"A cursory and ",
+			"type":"lecture",
+			"instructor_notes":"UXPA"
+		},
+		{
+			"name":"Build a Prototype",
+			"type":"group",
+			"time":60,
 			"description":"A cursory and "
-		}
+		},
+		
 		
 	],
 	"assignments":[
-		
+		{
+			"description": "Continue building your prototype from class. At some point, post it on the publicly facing internet. You might try github pages for this."
+		}
 	]
-	
 }

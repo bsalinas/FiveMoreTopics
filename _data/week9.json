@@ -1,17 +1,32 @@
 {
 	"week":9,
-	"topic":"prototyping",
+	"topic":"data_viz",
 	"description":"The native medium of software designs is code.",
 	"activities":[
 		{
-			"name":"Introduction to d3.js",
+			"name":"Principles of Data Visualization",
+			"time":25,
+			"type":"lecture",
+			"description":"An introduction to some of the basic principles of data visualization"
+		},
+		{
+			"name":"Critique Some Visualizations",
+			"time":20,
+			"type":"group",
+			"description":"In your groups, critique some of the following visualizations. What is good about each? What is bad about each?"
+		},
+		{
+			"name":"Types of Data Visualizations",
 			"time":45,
-			"description":"Adam Pere, software engineer at Involution Studios, will provide an introduction to d3.js, a powerful visualization library."
-		}
-		
+			"type":"lecture",
+			"instructor_notes":"Make an interactive part of this",
+			"description":"A cursory and "
+		},
 	],
 	"assignments":[
-		
+		{
+			"description":"Read..."
+		}
 	]
 	
 }

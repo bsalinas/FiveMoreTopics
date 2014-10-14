@@ -5,5 +5,4 @@ category: classes
 week: 6
 last_week: 5
 topic: realdata
-wip: true
 ---

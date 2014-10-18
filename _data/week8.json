@@ -22,6 +22,9 @@
 	"assignments":[
 		{
 			"description": "Continue building your prototype from class. At some point, post it on the publicly facing internet. You might try github pages for this."
+		},
+		{
+			"description":"Read Chapter 5 (Visualizing with Clarity) of <em>Data Points: Visualization That Means Something</em>"
 		}
 	]
 }

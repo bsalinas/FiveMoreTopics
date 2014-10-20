@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#">process</a></li>
+		<li><a href="#">09 Sep 2014</a></li>
+	</ul>
+	<ul>
+		<li><a href="#">graphic design</a></li>
+		<li><a href="#">16 Sep 2014</a></li>
+		<li><a href="#">23 Sep 2014</a></li>
+	</ul>
+	<ul>
+		<li><a href="#">real data</a></li>
+		<li><a href="#">30 Sep 2014</a></li>
+		<li><a href="#">07 Oct 2014</a></li>
+		<li><a href="#">14 Oct 2014</a></li>
+	</ul>
+    |
+</body>
+</html>
+@@@
+tooltip: {text:"We have a ul for each section of the navigation and an li for each class", wait:3000}
+jumpTo: 4:0
+run: {command:"indentMore"}
+type: ul{ ::: Select ul
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: background-color:#f2f2f2;
+run: {command:"goLineDown"}
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+type: li{ ::: Select li
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: background-color:#8ee;
+tooltip: Coloring the backgrounds helps when working with margins and paddings.
+wait: 1500
+jumpTo: 5:0 ::: Remove Bullet Points
+run: {"command":"goLineEnd"}
+run: {command:"newlineAndIndent"}
+type: list-style-type: none;
+run: {command:"newlineAndIndent"}
+type: padding: 15px 0; ::: Adjust Spacing Between Sections
+run: {command:"newlineAndIndent"}
+type: margin: 0;
+jumpTo: 11:0 ::: Adjust Spacing Between Items
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+type: margin-bottom:5px;
+run: {command:"goLineUp"} ::: Remove Colors
+run: {command:"goLineStartSmart"}
+type: //
+jumpTo: 5:0
+run: {"command":"goLineEnd"}
+run: {"command":"goLineStartSmart"}
+type://
+jumpTo: 13:0 ::: Update Link Styles
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentAuto"}
+type: li a {
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: text-decoration: none;
+run: {command:"newlineAndIndent"}
+type: color:black;
+#
+run: {command:"goLineDown"}
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentAuto"}
+type: li a:hover {
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: color:#888;
+#
+run: {command:"goLineDown"}
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentAuto"}
+type: li:first-child {
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: font-weight:bold;
+jumpTo: 7:12 ::: Updating Spacing Between Groups
+run: {command:"delCharBefore",times:"2"}
+type: 8

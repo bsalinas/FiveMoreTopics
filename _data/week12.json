@@ -1,0 +1,31 @@
+{
+	"week":12,
+	"topic":"development",
+	"description":"The native medium of software designs is code.",
+	"activities":[
+		{
+			"name":"Web Architectures",
+			"time":30,
+			"type":"lecture",
+			"description":"We will go through a few common web architectures"
+		},
+		{
+			"name":"The Impact of Architecture on Design",
+			"time":30,
+			"type":"group",
+			"description":"As a group, discuss how the different architectures presented will impact your designs."
+		},
+		{
+			"name":"5 Tecniques that are easy to design and hard to build",
+			"type":"lecture",
+			"time":30,
+			"instructor_notes":"Semi-persistance (i.e. context dependent behavior); Apple like search results; Dashboards (what is the cost of SQL queries)...",
+			"description":"There are certain things that look easy on paper but can be black holes in development and usability. Here are a few of them."
+		},
+		
+	],
+	"assignments":[
+		
+	]
+	
+}

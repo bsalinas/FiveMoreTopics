@@ -1,0 +1,28 @@
+{
+	"week":11,
+	"topic":"data_viz",
+	"description":"The native medium of software designs is code.",
+	"activities":[
+		{
+			"name":"More Visualization Techniques",
+			"time":25,
+			"type":"lecture",
+			"instructor_notes":"maybe break them up like the book does.",
+			"description":"We will go through a few more techniques."
+		},
+		{
+			"name":"Design a visualization",
+			"time":60,
+			"type":"group",
+			"description":"In your groups, design a visualization. Think about what techniques you might want to use and decide which is the most appropriate for the dataset."
+		},
+		
+	],
+	"assignments":[
+		{
+			"description":"Continue working on your visualization. Get some of it into pixels or code (depending on how complex it is)."
+		}
+		
+	]
+	
+}

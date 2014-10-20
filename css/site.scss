@@ -1,3 +1,7 @@
+---
+---
+
+
 $lighter:#A2A2A2;
 $lightest:#f2f2f2;
 $green: #90CBD6;
@@ -273,5 +277,16 @@ footer{
 }
 
 .code-example{ 
-	background-color:red;
+	h3{
+		display:inline-block;
+		margin-right:20px;
+	}
+	iframe{
+		margin-top:10px;
+		width:100%;
+	}
+	.cm-qualifier{
+		color:blue!important;
+	}
+
 }

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+
+</style>
+</head>
+<body>
+    |
+</body>
+</html>
+@@@
+type: <a href="http://google.com">My Button</a> ::: Create Tag
+tooltip: {text: "Oftentimes we use an a tag for buttons", wait: 1000}
+run: {command:"goLineStart"}
+run: {command:"goWordRight"}
+run: {command:"goCharRight"} ::: Add Class
+tooltip: {text:"Adding a class lets us style the link", wait:1000}
+type: class="btn" 
+jumpTo: 4:0
+type: .btn{ ::: Basic Style
+run: {command:"newlineAndIndent"}
+type: background-color:rgb(120,120,255);
+run: {command:"newlineAndIndent"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+type: padding:5px;
+tooltip: {text:"This will set the padding to be 5px on all sides", wait:1000}
+run: {command:"newlineAndIndent"}
+type: text-decoration:none;
+run: {command:"newlineAndIndent"}
+type: color:white;
+run: {command:"newlineAndIndent"}
+type: border-radius:2px;
+run: {command:"goLineDown"}
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+type: .btn:hover{ ::: Add Hover State
+run: {command:"newlineAndIndent"}
+type: background-color:rgb(20,20,255);
+run: {command:"newlineAndIndent"}
+type: }
+run: {command:"selectAll"}
+run: {command:"indentAuto"}
+tooltip: {text:"Now, try hovering over the button", wait:1000}
+run: {command:"goDocEnd"} ::: Add Another Button
+run: {command:"goLineUp", times:2}
+run: {command:"goLineStartSmart"}
+run: {command:"newlineAndIndent"}
+run: {command:"goLineUp"}
+type: <a class="btn" href="http://olin.edu">Another Button</a>
+wait: 400 ::: Add Button Margin
+jumpTo: 6:0
+run: {command:"newlineAndIndent"}
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: margin:2px 4px;

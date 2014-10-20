@@ -1,0 +1,23 @@
+[
+	{
+		"includes":"html_examples/typography.html",
+		"title":"Some Common Text Elements",
+		"description":"This goes through a few html and css things related to text."
+	},
+	{
+		"includes":"html_examples/button.html",
+		"title":"Styling a Button",
+		"description":"Here is an example of how to use CSS to make an a tag look like a button."
+	},
+	{
+		"includes":"html_examples/lists.html",
+		"title":"List Basics",
+		"description":"Sometimes you want a list to look a little different. Maybe like the left navigation bar."
+	},
+	{
+		"includes":"html_examples/stats_bar.html",
+		"title":"Non-standard Lists",
+		"description":"Lists are not always rendered as vertical lists. In this example, we will turn a ul element into a horizontal bar."
+	}
+
+]

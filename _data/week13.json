@@ -1,0 +1,23 @@
+{
+	"week":13,
+	"topic":"development",
+	"description":"The native medium of software designs is code.",
+	"activities":[
+		{
+			"name":"CodeRyte: A Case Study in Software Design and Development",
+			"time":45,
+			"type":"lecture",
+			"description":"Eric Benoit, a Designer at Involution Studios, will walk through a year long project."
+		},
+		{
+			"name":"Agile?",
+			"time":45,
+			"type":"lecture",
+			"description":"..."
+		}
+	],
+	"assignments":[
+		
+	]
+	
+}

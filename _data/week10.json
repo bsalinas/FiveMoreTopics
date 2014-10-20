@@ -1,0 +1,27 @@
+{
+	"week":10,
+	"topic":"data_viz",
+	"description":"The native medium of software designs is code.",
+	"activities":[
+		{
+			"name":"Introduction to d3.js",
+			"type":"lecture",
+			"time":20,
+			"description":"Adam Pere, software engineer at Involution Studios, will provide an introduction to d3.js, a powerful visualization library."
+		},
+		{
+			"name":"Build Something in d3.js",
+			"time":80,
+			"type":"group",
+			"description":"In your groups, or individually, build a visualization."
+		}
+
+	],
+	"assignments":[
+		{
+			"description":"Read Chapter 4: Exploring Data Visually of <em>Data Points: Visualization That Means Something</em>"
+		}
+		
+	]
+	
+}

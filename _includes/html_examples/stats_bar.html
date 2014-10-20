@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+
+</style>
+</head>
+<body>
+    |
+</body>
+</html>
+@@@
+type: <ul> ::: Add HTML
+run: {command: "newlineAndIndent"}
+run: {command: "newlineAndIndent"}
+run: {command:"indentLess"}
+type: </ul>
+run: {command: "goLineUp"}
+type: <li>
+run: {command: "newlineAndIndent"}
+type: <div class="large">$3.19</div>
+run: {command: "newlineAndIndent"}
+type: <div class="small">Regular</div>
+run: {command: "newlineAndIndent"}
+run: {command: "indentLess"}
+type: </li>
+run: {command:"newlineAndIndent"}
+type: <li>
+run: {command: "newlineAndIndent"}
+type: <div class="large">$3.39</div>
+run: {command: "newlineAndIndent"}
+type: <div class="small">Plus</div>
+run: {command: "newlineAndIndent"}
+run: {command: "indentLess"}
+type: </li>
+run: {command:"newlineAndIndent"}
+type: <li>
+run: {command: "newlineAndIndent"}
+type: <div class="large">$3.59</div>
+run: {command: "newlineAndIndent"}
+type: <div class="small">Premium</div>
+run: {command: "newlineAndIndent"}
+run: {command: "indentLess"}
+type: </li>
+jumpTo: 4:0
+run: {command:"indentMore"}
+type: ul{ ::: Remove List Elements
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: list-style-type:none;
+run: {command:"goLineDown"}
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+type: li{ ::: Place li Elements Inline
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: background-color:#f2f2f2;
+run: {command:"newlineAndIndent"}
+type: display: inline-block;
+run: {command:"goLineDown"}
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+type: li .large{ ::: Style the Large Text
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: font-size:30px;
+run: {command:"newlineAndIndent"}
+type: padding: 2px 20px;
+run: {command:"goLineDown"}
+run: {command:"goLineEnd"}
+run: {command:"newlineAndIndent"}
+type: li .small{ ::: Style the Small Text
+run: {command:"newlineAndIndent"}
+run: {command:"newlineAndIndent"}
+run: {command:"indentLess"}
+type: }
+run: {command:"goLineUp"}
+run: {command:"indentAuto"}
+type: background-color: #888;
+run: {command:"newlineAndIndent"}
+type: color: #f2f2f2;
+run: {command:"newlineAndIndent"}
+type: text-align: center;
+run: {command:"newlineAndIndent"}
+type: padding: 2px 0;
+run: {command:"newlineAndIndent"}
+type: text-transform: uppercase;
+run: {command:"newlineAndIndent"}
+type: font-size:12px;

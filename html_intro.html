@@ -1,0 +1,36 @@
+---
+layout: layout
+title: "HTML Introduction"
+extra_css:
+ - lib/codemirror.css
+ - lib/cm-movie.css
+extra_js:
+ - lib/codemirror.js
+ - lib/cm-movie-full.js
+ - lib/xml.js
+ - lib/htmlmixed.js
+ - lib/css.js
+ - lib/javascript.js
+ - js/html_movies.js
+---
+
+<!-- You can edit this whole page, remove it, or use it as basis for any non-post pages you have. -->
+<section class="content">
+<h1>HTML/CSS Overview</h1>
+	{% assign i=0 %}
+	  {%for example in site.data.html_examples%}
+	  	<div class="code-example">
+	  		<div class="title">
+	  			<h3>{{example.title}}</h3>
+	  			<a class="btn playBtn" href="#" data-id="{{i}}">Play</a>
+	  			<p>{{example.description}}</p>
+	  		</div>
+		  	<textarea id="code_{{i}}" class="code" name="code" data-id="{{i}}">{%include {{example.includes}}%}</textarea>
+		  	<h3>Preview</h3>
+	  		<iframe id="preview_{{i}}" class="preview" data-id="{{i}}"></iframe>
+	  		{%assign i=i | plus:1 %}
+	  	</div>
+	  	<hr/>
+	  {%endfor%}
+	</section>
+</section>

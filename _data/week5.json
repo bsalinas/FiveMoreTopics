@@ -7,7 +7,14 @@
 			"name":"Design Axioms",
 			"type":"lecture",
 			"time":60,
-			"description":"Juhan Sonin, Creative Director of Involution Studios, will talk about the Design Axioms."
+			"description":"Juhan Sonin, Creative Director of Involution Studios, will talk about the Design Axioms.",
+			"attachments":[
+				{
+					"link":"https://www.dropbox.com/s/9sq5ilwj0tt6pef/Design_Axioms_Olin.pdf",
+					"title":"Slides",
+					"type":"link"
+				}
+			]
 		}
 	],
 	"assignments":[

@@ -15,7 +15,7 @@
 			"description":"A cursory and (hopefully) practical introduction to HTML, CSS, jQuery and maybe a few other javascript libraries thrown in for good measure.",
 			"attachments":[
 				{
-					"link":"/html_intro.html",
+					"link":"../../html_intro.html",
 					"title":"HTML Samples",
 					"type":"link"
 				},

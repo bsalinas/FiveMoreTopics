@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+<script>
+ $(document).ready(function(e){
+
+  });
+</script>
+</head>
+<body>
+    |
+</body>
+</html>
+@@@
+moveTo: {"pos":"6:31"}
+type: {"text":"\n   var data = [\n\t \n\t ];"}
+moveTo: {"pos":"8:2"}
+type: {"text":"\t{"}
+moveTo: {"pos":"8:3"}
+run: {"command":"delCharBefore","times":"3"}
+type: {"text":"\t "}
+moveTo: {"pos":"8:3"}
+type: {"text":"name:Ben"}
+run: {"command":"delCharBefore","times":"3"}
+type: {"text":"\"Ben\",city:\"Boston\"},\n\t {name:\"Daniel\",city:\"New York\"},\n\t P{"}
+run: {"command":"delCharBefore","times":"2"}
+type: {"text":"{name:\"Rebecce"}
+run: {"command":"delCharBefore"}
+type: {"text":"a\",city:\"Hou"}
+run: {"command":"delCharBefore"}
+type: {"text":"st"}
+run: {"command":"delCharBefore","times":"2"}
+type: {"text":"uston\"{"}
+run: {"command":"delCharBefore"}
+type: {"text":"},\n\t {name:\"Hannah\",\""}
+run: {"command":"delCharBefore"}
+type: {"text":"cityy"}
+run: {"command":"delCharBefore","times":"2"}
+type: {"text":"y:\"Pittsburgh\"}"}
+moveTo: {"pos":"15:9"}
+type: {"text":"\n  <script>"}
+run: {"command":"delCharBefore"}
+type: {"text":" id=\"template\","}
+run: {"command":"delCharBefore"}
+type: {"text":" type=\"text/html\">\n  \n  </script>"}
+moveTo: {"pos":"17:2"}
+type: {"text":"\t\{\{#people}}\n\t\n\t\{\{/[peo"}
+run: {"command":"delCharBefore","times":"4"}
+type: {"text":"people}}"}
+moveTo: {"pos":"18:1"}
+type: {"text":"\t<h1>\{\{name}}</h1>\n\t\t<p>Lives In<"}
+run: {"command":"delCharBefore"}
+type: {"text":" \{\{city}}</p>"}
+moveTo: {"pos":"12:4"}
+type: {"text":"\n   var template = $('."}
+run: {"command":"delCharBefore"}
+type: {"text":"#template').html();\n   $(body"}
+run: {"command":"delCharBefore","times":"4"}
+type: {"text":"'body').html(Mustach."}
+run: {"command":"delCharBefore"}
+type: {"text":"e.render(template, "}
+run: {"command":"delCharBefore"}
+type: {"text":"data"}
+run: {"command":"delCharBefore","times":"4"}
+type: {"text":"{people:data});"}
+moveTo: {"pos":"14:57"}
+type: {"text":"_)"}
+run: {"command":"delCharBefore","times":"2"}
+type: {"text":")"}

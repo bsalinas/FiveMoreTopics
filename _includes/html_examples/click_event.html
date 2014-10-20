@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(e){
+
+  });
+</script>
+</head>
+<body>
+    |
+</body>
+</html>
+@@@
+moveTo: {"pos":"6:0"}
+type: {"text":"\t"}
+moveTo: {"pos":"11:4"}
+type: {"text":"<a href=\"#\" id=\"button>"}
+run: {"command":"delCharBefore"}
+type: {"text":"\">Click Me</a>"}
+moveTo: {"pos":"11:4"}
+run: {"command":"delCharBefore","times":"4"}
+type: {"text":"  "}
+moveTo: {"pos":"6:1"}
+type: {"text":"$('#button').click(function(e){\n\t  \n\t  }"}
+moveTo: {"pos":"8:3"}
+run: {"command":"delCharBefore","times":"3"}
+type: {"text":"\t"}
+moveTo: {"pos":"8:2"}
+type: {"text":");"}
+moveTo: {"pos":"7:3"}
+type: {"text":"e.preventDefault();\n\t  a"}
+run: {"command":"delCharBefore"}
+type: {"text":"alert('Hello. You clicked a button');\n\t  $(this).text('I was clicked');"}

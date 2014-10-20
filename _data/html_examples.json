@@ -18,6 +18,16 @@
 		"includes":"html_examples/stats_bar.html",
 		"title":"Non-standard Lists",
 		"description":"Lists are not always rendered as vertical lists. In this example, we will turn a ul element into a horizontal bar."
+	},
+	{
+		"includes":"html_examples/click_event.html",
+		"title":"jQuery Click Events",
+		"description":"Here's a very basic example of a click event using jQuery."
+	},
+	{
+		"includes":"html_examples/mustache.html",
+		"title":"Mustache Templates",
+		"description":"<a href=\"http://mustache.github.io/\">Mustache</a> is a templating engine (that is available in many languages including javascript) which I find provides a very simple way to create templates for prototypes."
 	}
 
 ]

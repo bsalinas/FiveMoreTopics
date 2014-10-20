@@ -1,7 +1,7 @@
 {
 	"week":7,
 	"topic":"prototyping",
-	"description":"The native medium of software designs is code.",
+	"description":"The native medium of software designs is code. Sometimes, to really evaluate the quality of a design, you have to experience it its navtive medium. In this class, we'll start talking about prototyping techniques.",
 	"activities":[
 		{
 			"name":"Prototyping and Testing Designs and Ideas: Ross Beyeler, Growth Spark",
@@ -12,7 +12,19 @@
 		{
 			"name":"Introduction to jQuery, CSS, HTML",
 			"time":50,
-			"description":"A cursory and (hopefully) practical introduction to HTML, CSS, jQuery and maybe a few other javascript libraries thrown in for good measure."
+			"description":"A cursory and (hopefully) practical introduction to HTML, CSS, jQuery and maybe a few other javascript libraries thrown in for good measure.",
+			"attachments":[
+				{
+					"link":"/html_intro.html",
+					"title":"HTML Samples",
+					"type":"link"
+				},
+				{
+					"link":"week7/template.zip",
+					"title":"HTML Template",
+					"type":"download"
+				}
+			]
 		}			
 	],
 	"assignments":[

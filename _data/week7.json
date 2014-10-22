@@ -8,6 +8,14 @@
 			"type":"lecture",
 			"time":40,
 			"description":"Ross Beyeler is the founder of local web design and strategy firm <a href=\"http://www.growthspark.com\">Growth Spark</a>. Ross, who graduated from Babson in 2009, will be speaking about how Growth Spark tests ideas and designs from a usability and business value perspective.",
+			"attachments":[
+				{
+					"link":"http://www.slideshare.net/growthspark/prototyping-a-conversation-about-your-assumptions",
+					"title":"Ross's Slides",
+					"type":"link"
+				},
+			]
+
 		},
 		{
 			"name":"Introduction to jQuery, CSS, HTML",
@@ -23,7 +31,12 @@
 					"link":"week7/template.zip",
 					"title":"HTML Template",
 					"type":"download"
-				}
+				},
+				{
+					"link":"week7/completed.zip",
+					"title":"Class Example",
+					"type":"download"
+				},
 			]
 		}			
 	],

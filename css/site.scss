@@ -61,6 +61,8 @@ li.topic{
 	color:white;
 	font-family:Helvetica;
 	font-weight:semibold;
+		display: inline-block;
+
 
 	&:hover{
 		background-color:darken($green,20%);

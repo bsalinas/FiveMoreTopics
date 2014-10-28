@@ -1,13 +1,13 @@
 {
 	"week":10,
 	"topic":"data_viz",
-	"description":"The native medium of software designs is code.",
+	"description":"This week we will dive into code and learn a bit about d3.js, a very popular visualization library.",
 	"activities":[
 		{
 			"name":"Introduction to d3.js",
 			"type":"lecture",
 			"time":20,
-			"description":"Adam Pere, software engineer at Involution Studios, will provide an introduction to d3.js, a powerful visualization library."
+			"description":"<a href=\"http://www.goinvo.com/team/#Adam\">Adam Pere</a>, software engineer at Involution Studios, will provide an introduction to d3.js, a powerful visualization library."
 		},
 		{
 			"name":"Build Something in d3.js",

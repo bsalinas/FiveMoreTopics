@@ -1,7 +1,7 @@
 {
 	"week":9,
 	"topic":"data_viz",
-	"description":"The native medium of software designs is code.",
+	"description":"This week we start working on visualization. We'll start out focusing on some theory.",
 	"activities":[
 		{
 			"name":"Principles of Data Visualization",

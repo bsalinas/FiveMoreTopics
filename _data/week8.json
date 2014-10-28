@@ -1,20 +1,32 @@
 {
 	"week":8,
 	"topic":"prototyping",
-	"description":"The native medium of software designs is code.",
+	"description":"This week we will get more hands on and spend most of our time actually building something.",
 	"activities":[
 		{
 			"name":"Deciding what to prototype?",
-			"time":25,
-			"description":"A cursory and ",
+			"time":15,
+			"description":"Knowing what to prototype is almost as important as knowing how to prototype. We will go through some rules for prototyping and some examples of how to choose how to prototype.",
 			"type":"lecture",
 			"instructor_notes":"UXPA"
 		},
 		{
 			"name":"Build a Prototype",
 			"type":"group",
-			"time":60,
-			"description":"A cursory and "
+			"time":75,
+			"description":"Individually or with someone else, build something! Below are a few examples of what you might build:
+			<ul>
+				<li>Build a one screen view of who is going to which talk for <a href=\"http://lanyrd.com/2013/uxpa/\">this conference</a>. Have the ability to list which session you will attend
+				</li>
+				<li>Make a table listing the courses in Olin's course catalog. Make it so that when you expand a row, you get the course description. It took a bit of trickery to scrape that data, so feel free to try to grab it using Kimono and ScreenScraper or just download it <a href=\"../../files/week8/courses.json\">as json</a> or <a href=\"../../files/week8/courses.csv\">as csv</a> 
+				</li>
+				<li>
+					Prototype that lets you see what students are signed up for what class. Hint: you can find students at <a href=\"http://www.olinapps.com/directory/\">the directory</a> and classes at <a href=\"http://www.olin.edu/course-listing/\">the Olin website</a>. Or download the course listing  <a href=\"../../files/week8/courses.json\">as json</a> or <a href=\"../../files/week8/courses.csv\">as csv</a>  Initially, you might want to just hardcode a few classes in. As a stretch goal, you might add the ability to drag students to a course.
+				</li>
+				<li>
+					Take the search results from foursquare and replace the map with the actual detail view of the restaurant you select. This could be considered a better user experience because it would let you browse many restaurants quickly. Hint: The best way to handle this might be to replace the map section with an iframe and run a script in the console that hijacks the click events for the a tags in the search results. If you wanted to make this more robust, you might make it a chrome extension.
+				</li>
+			</ul>"
 		},
 		
 		

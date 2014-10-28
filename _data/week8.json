@@ -8,7 +8,14 @@
 			"time":15,
 			"description":"Knowing what to prototype is almost as important as knowing how to prototype. We will go through some rules for prototyping and some examples of how to choose how to prototype.",
 			"type":"lecture",
-			"instructor_notes":"UXPA"
+			"instructor_notes":"UXPA",
+			"attachments":[
+				{
+					"link":"week8/prototyping.pdf",
+					"title":"Slides",
+					"type":"download"
+				},
+			]
 		},
 		{
 			"name":"Build a Prototype",

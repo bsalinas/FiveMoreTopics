@@ -19,7 +19,10 @@
 					<li><a href=\"http://www.nytimes.com/interactive/2014/06/05/upshot/how-the-recession-reshaped-the-economy-in-255-charts.html\">Recession Recovery</a></li>
 					<li><a href=\"http://www.nytimes.com/interactive/2014/05/11/upshot/up-soccer-table.html\">English Football Teams</a></li>
 					<li><a href=\"http://www.education-inequalities.org/indicators/edu4#?sort=mean&dimension=all&group=all&age_group=edu4_20&countries=all\">Economic Development Data</a></li>
-				</ul>"
+				</ul>",
+			"results":{
+				"meta":"This exploration didn't solicit the exact response I was hoping for, but it did introduce students to the idea that datasets have a story as well as some neat data visualization techniques. To make this more effective, it should probably be done in conjunction with a discussion around how real data has outliers, mins/maxes, and a story."
+			}
 		},
 		{
 			"name":"The Basics of Crafting Data Sets",
@@ -33,7 +36,19 @@
 					"title":"Slides",
 					"type":"download"
 				}
-			]
+			],
+			"results":{
+				"summary":"This talk outlined some practical steps to actually generating data that isn't readily available. After a group example, students worked on generating a sample schedule as a group.",
+				"documents":[
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"These students told the story of a student who changed their major twice and studied away one semester.",
+						"link":"files/week6/sample_schedule_1.jpg"
+					}
+				],
+				"meta":"Providing the sample in lecture as well as letting students all work on the same example in their groups worked well for introducing concepts gradually."
+			}
 		},
 		{
 			"name":"Craft a Dataset",
@@ -49,7 +64,19 @@
 				<li>Football team standings</li>
 				<li>Numbers of comments/likes on social media posts</li>
 			</ul>",
-			"instructor_notes":"knowledge -> info -> data"	
+			"instructor_notes":"knowledge -> info -> data",
+			"results":{
+				"summary":"This activity went well. Students had a bit of trouble grasping the idea of creating multiple datasets. Going forward, the concept of mapping design goals to example datasets should be introduced (see image below).",
+				"documents":[
+					{
+						"type":"photo",
+						"location":"internal",
+						"caption":"As students were working on generating a dataset for calendar appointments, they came up with a design goal. We then discussed how this design goal mapped to scenarios they needed to test this design against. Each of these scenarios become a dataset.",
+						"link":"files/week6/sample_schedule_2.jpg"
+					}
+				],
+				"meta":"All in all, this was a good activity."
+			}	
 		}
 	],
 	"assignments":[

@@ -15,7 +15,12 @@
 					"title":"Slides",
 					"type":"download"
 				},
-			]
+			],
+			"results":{
+				"summary":"This talk walked through some examples of prototypes and a framework for deciding what to prototype.",
+				"meta":"The examples in this talk were good, but overall the talk was weaker than it should have been. A lot of the points are a little half-baked."
+			}
+
 		},
 		{
 			"name":"Build a Prototype",
@@ -33,8 +38,13 @@
 				<li>
 					Take the search results from foursquare and replace the map with the actual detail view of the restaurant you select. This could be considered a better user experience because it would let you browse many restaurants quickly. Hint: The best way to handle this might be to replace the map section with an iframe and run a script in the console that hijacks the click events for the a tags in the search results. If you wanted to make this more robust, you might make it a chrome extension.
 				</li>
-			</ul>"
+			</ul>",
+			"results":{
+				"summary":"Different students got to different stages of a functional prototype. In some cases, students got to the point where they could click on some content and show other content. Some got to the point there was content on the screen. Others did really participate. Building anything in 1 hour and 15 minutes is a tall order, especially when you aren't familiar with the tools.",
+				"meta":"I think this exercise was pretty bad. There was too much freedom/flexibility in too short of a time period. Either, this should have been something taking place over several weeks or it should have been something that was a bit more constrained. Providing links to precreated datasets was a great idea because it helped to limit the scope. I should have provided real examples of what the prototype would have done. Perhaps I should have also written up a more explicit process that I go through in prototyping (i.e. gather data, sketch out a design/functionality, batch generate content in InDesign, prototype) There were lots of things students were tackling for the first time in a short time period (i.e. Mustache templates, CSS, javascript, designing a screen). It might have made sense to further constrain this activity by providing prerendered images to use as content." 
+			}
 		},
+
 		
 		
 	],

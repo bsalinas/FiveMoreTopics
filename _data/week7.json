@@ -14,7 +14,11 @@
 					"title":"Ross's Slides",
 					"type":"link"
 				},
-			]
+			],
+			"results":{
+				"summary":"Ross's talk provided a very good introduction to the type of protyping that GrowthSpark does as well as a good introduction to a broad list of tools they use.",
+				"meta":"Bringing in opinions other than my own is good."
+			}
 
 		},
 		{
@@ -42,7 +46,11 @@
 					"title":"Video of Class Example",
 					"type":"link"
 				}
-			]
+			],
+			"results":{
+				"summary":"In this talk, I walked through an example of building a fairly involved prototype in real time.",
+				"meta":"This example was too fast for much of the class. I, again, forgot that students didn't have much experience with javascript and css, and so the very detailed oriented introduction did not work as well as I hoped. It would have been better to do a simpler example so that the key concepts really got across."
+			}
 		}			
 	],
 	"assignments":[

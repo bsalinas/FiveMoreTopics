@@ -5,5 +5,4 @@ category: classes
 week: 9
 last_week: 8
 topic: data_viz
-wip: true
 ---

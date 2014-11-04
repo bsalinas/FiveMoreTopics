@@ -4,23 +4,42 @@
 	"description":"This week we start working on visualization. We'll start out focusing on some theory.",
 	"activities":[
 		{
+			"name":"What Makes a Good Visualization?",
+			"time":10,
+			"type":"group",
+			"description":"We see inforgraphics and data visualizations everywhere around us. As a group, discuss what are some attributes or principles of good data visualizations."
+		},
+		{
 			"name":"Principles of Data Visualization",
 			"time":25,
 			"type":"lecture",
-			"description":"An introduction to some of the basic principles of data visualization"
+			"description":"An introduction to some of the basic principles of data visualization",
+			"attachments":[
+				{
+					"link":"week9/data_viz_principles_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
 		},
 		{
 			"name":"Critique Some Visualizations",
 			"time":20,
 			"type":"group",
-			"description":"In your groups, critique some of the following visualizations. What is good about each? What is bad about each?"
+			"description":"In your groups, critique some of the following visualizations. What is good about each? What is bad about each? What visual cues are they using to show data?",
+			"attachments":[
+				{
+					"link":"week9/data_viz_examples_v01.pdf",
+					"title":"Examples",
+					"type":"download"
+				}
+			]
 		},
 		{
-			"name":"Types of Data Visualizations",
+			"name":"Visualization Techniques Based on Data Type",
 			"time":45,
-			"type":"lecture",
-			"instructor_notes":"Make an interactive part of this",
-			"description":"A cursory and "
+			"type":"group",
+			"description":"Each group will get a type of data assigned to them (i.e. networks, time series, categorical, etc). Identify some examples of datasets that represent this type of data. Then, identify as many types of visualizations as you can for this type of data."
 		},
 	],
 	"assignments":[

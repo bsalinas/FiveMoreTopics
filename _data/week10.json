@@ -7,7 +7,19 @@
 			"name":"Introduction to d3.js",
 			"type":"lecture",
 			"time":20,
-			"description":"<a href=\"http://www.goinvo.com/team/#Adam\">Adam Pere</a>, software engineer at Involution Studios, will provide an introduction to d3.js, a powerful visualization library."
+			"description":"<a href=\"http://www.goinvo.com/team/#Adam\">Adam Pere</a>, software engineer at Involution Studios, will provide an introduction to d3.js, a powerful visualization library.",
+			"attachments":[
+				{
+					"link":"http://adampere.com/d3/d3_presentation_pere.pdf",
+					"title":"Slides",
+					"type":"link"
+				},
+				{
+					"link":"http://adampere.com/d3/",
+					"title":"Adam's Tutorials",
+					"type":"link"
+				},
+			],
 		},
 		{
 			"name":"Build Something in d3.js",

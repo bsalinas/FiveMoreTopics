@@ -8,19 +8,34 @@
 			"time":25,
 			"type":"lecture",
 			"instructor_notes":"maybe break them up like the book does.",
-			"description":"We will go through a few more techniques."
+			"description":"We will go through a few more techniques.",
+			"attachments":[
+				{
+					"link":"week11/dataviz_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
 		},
 		{
 			"name":"Design a visualization",
 			"time":60,
 			"type":"group",
-			"description":"In your groups, design a visualization. Think about what techniques you might want to use and decide which is the most appropriate for the dataset."
+			"description":"There are quite a few tools out there for exploring data. Spend the remainder of class playing with one or two of them. All of them have some interesting sample data sets.
+			<ul>
+				<li><a href=\"http://www.tableausoftware.com/public/\">Tableau Public</a>: Arguably the hottest of the products on this list - In addition to being difficult to spell, Tableau makes it easy to make dashboards in an Excel like interface</li>
+				<li><a href=\"https://www.google.com/publicdata/directory\">Google Public Datasets Explorer</a>: Limited to a few visualization techniques, but they have a ton of datasets to play with.</li>
+				<li><a href=\"https://support.google.com/fusiontables/answer/2571232\">Google Fusion Tables</a>: Google Spreadsheets on steroids (with features like geocoding and some nifty interfaces)</li>
+				<li><a href=\"http://fathom.info/mirador/\">Mirador by Fathom</a>: A tool that is primarily for exploring datasets.</li>
+				<li><a href=\"https://cartodb.com/\">CartoDB</a>: An easy(ish) interface that lets you build beautiful data-driven maps.</li>
+				<li><a href=\"http://bl.ocks.org/syntagmatic/raw/3156751/\">Parallel Coordinates</a>: A simple tool that lets you upload a CSV file and visualize it using a neat technique</li>
+			</ul>"
 		},
 		
 	],
 	"assignments":[
 		{
-			"description":"Continue working on your visualization. Get some of it into pixels or code (depending on how complex it is)."
+			"description":"Nothing this week."
 		}
 		
 	]

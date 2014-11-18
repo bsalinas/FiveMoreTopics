@@ -10,10 +10,17 @@
 			"description":"Eric Benoit, a Designer at Involution Studios, will walk through a year long project."
 		},
 		{
-			"name":"Agile?",
-			"time":45,
+			"name":"5 Tecniques that are easy to design and hard to build",
 			"type":"lecture",
-			"description":"..."
+			"time":15,
+			"instructor_notes":"Semi-persistance (i.e. context dependent behavior); Apple like search results; Dashboards (what is the cost of SQL queries)...",
+			"description":"There are certain things that look easy on paper but can be black holes in development and usability. Here are a few of them."
+		},
+		{
+			"name":"Redesign This Course",
+			"type":"group",
+			"time":30,
+			"description":"As a group, redesign what this course should look like in the future. What should be taken out entirely? What deserves more time?"
 		}
 	],
 	"assignments":[

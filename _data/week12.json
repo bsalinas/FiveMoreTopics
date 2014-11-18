@@ -5,24 +5,28 @@
 	"activities":[
 		{
 			"name":"Web Architectures",
-			"time":30,
+			"time":15,
 			"type":"lecture",
 			"description":"We will go through a few common web architectures"
 		},
 		{
 			"name":"The Impact of Architecture on Design",
-			"time":30,
+			"time":15,
 			"type":"group",
 			"description":"As a group, discuss how the different architectures presented will impact your designs."
 		},
 		{
-			"name":"5 Tecniques that are easy to design and hard to build",
+			"name":"Release Planning",
+			"time":15,
 			"type":"lecture",
-			"time":30,
-			"instructor_notes":"Semi-persistance (i.e. context dependent behavior); Apple like search results; Dashboards (what is the cost of SQL queries)...",
-			"description":"There are certain things that look easy on paper but can be black holes in development and usability. Here are a few of them."
+			"description":"So you have a piece of software designed. Now what? Here are a few techniques that are useful when trying to actually get the software built."
 		},
-		
+		{
+			"name":"Release Planning",
+			"time":30,
+			"type":"group",
+			"description":"In your groups, break down the provided design into functional chunks."
+		}
 	],
 	"assignments":[
 		

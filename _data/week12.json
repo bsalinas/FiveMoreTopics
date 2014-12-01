@@ -1,25 +1,26 @@
 {
 	"week":12,
 	"topic":"development",
-	"description":"The native medium of software designs is code.",
+	"description":"Design is not a theoretical exercise. It doesn't matter if you have the best design in the world if it never ends up getting used by a real person. Perhaps the most complex and critical part of the product development experience is the transition from design to code. This week, we'll hear some stories from a designer/developer on what makes successful projects and discuss how to break down a seemingly large system into buildable chunks.",
 	"activities":[
 		{
-			"name":"Web Architectures",
-			"time":15,
-			"type":"lecture",
-			"description":"We will go through a few common web architectures"
-		},
-		{
-			"name":"The Impact of Architecture on Design",
-			"time":15,
-			"type":"group",
-			"description":"As a group, discuss how the different architectures presented will impact your designs."
+			"name":"Guest Lecture: Stories from the Trenches",
+			"time":45,
+			"type":"guest",
+			"description": "<a href=\"http://about.me/benjamin.listwon\">Ben Listwon</a>, an engineer who was a founding member of Yelp and led teams at PayPal, eBay, Nokia, and Yahoo, will speak about some of his experiences designing and building software. In particular, he will touch on common pitfalls of development."
 		},
 		{
 			"name":"Release Planning",
 			"time":15,
 			"type":"lecture",
-			"description":"So you have a piece of software designed. Now what? Here are a few techniques that are useful when trying to actually get the software built."
+			"description":"So you have a piece of software designed. Now what? Here are a few techniques that are useful when trying to actually get the software built.",
+			"attachments":[
+				{
+					"link":"week12/release_planning_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
 		},
 		{
 			"name":"Release Planning",
@@ -29,7 +30,9 @@
 		}
 	],
 	"assignments":[
-		
+		{
+			"description":"..."
+		}
 	]
 	
 }

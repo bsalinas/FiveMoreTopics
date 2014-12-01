@@ -10,7 +10,7 @@
 			"description":"Eric Benoit, a Designer at Involution Studios, will walk through a year long project."
 		},
 		{
-			"name":"5 Tecniques that are easy to design and hard to build",
+			"name":"5 Techniques that are easy to design and hard to build",
 			"type":"lecture",
 			"time":15,
 			"instructor_notes":"Semi-persistance (i.e. context dependent behavior); Apple like search results; Dashboards (what is the cost of SQL queries)...",

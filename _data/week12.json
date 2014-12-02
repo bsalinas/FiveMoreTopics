@@ -4,12 +4,6 @@
 	"description":"Design is not a theoretical exercise. It doesn't matter if you have the best design in the world if it never ends up getting used by a real person. Perhaps the most complex and critical part of the product development experience is the transition from design to code. This week, we'll hear some stories from a designer/developer on what makes successful projects and discuss how to break down a seemingly large system into buildable chunks.",
 	"activities":[
 		{
-			"name":"Guest Lecture: Stories from the Trenches",
-			"time":45,
-			"type":"guest",
-			"description": "<a href=\"http://about.me/benjamin.listwon\">Ben Listwon</a>, an engineer who was a founding member of Yelp and led teams at PayPal, eBay, Nokia, and Yahoo, will speak about some of his experiences designing and building software. In particular, he will touch on common pitfalls of development."
-		},
-		{
 			"name":"Release Planning",
 			"time":15,
 			"type":"lecture",
@@ -26,12 +20,31 @@
 			"name":"Release Planning",
 			"time":30,
 			"type":"group",
-			"description":"In your groups, break down the provided design into functional chunks."
+			"description":"In your groups, break down the design of an e-mail client (i.e. Gmail) into functional chunks."
+		},
+		{
+			"name":"Web Architectures and Technology",
+			"time":15,
+			"type":"lecture",
+			"description":"We will go through a few common web architectures and technology choices.",
+			"attachments":[
+				{
+					"link":"week12/technology_v01.pdf",
+					"title":"Slides",
+					"type":"download"
+				}
+			]
+		},
+		{
+			"name":"The Impact of Architecture on Design",
+			"time":20,
+			"type":"group",
+			"description":"As a group, discuss how the different architectures presented will impact your designs."
 		}
 	],
 	"assignments":[
 		{
-			"description":"..."
+			"description":"Think some about the class in general. Next week we will spend some time redesigning the course in case it is offered again."
 		}
 	]
 	

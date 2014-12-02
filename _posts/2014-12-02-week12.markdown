@@ -5,5 +5,4 @@ category: classes
 week: 12
 last_week: 11
 topic: development
-wip: true
 ---

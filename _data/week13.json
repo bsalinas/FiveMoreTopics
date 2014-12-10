@@ -10,11 +10,11 @@
 			"description":"Eric Benoit, a Designer at Involution Studios, will walk through a year long project."
 		},
 		{
-			"name":"5 Techniques that are easy to design and hard to build",
+			"name":"4 Techniques that are easy to design and hard to build",
 			"type":"lecture",
 			"time":15,
-			"instructor_notes":"Semi-persistance (i.e. context dependent behavior); Apple like search results; Dashboards (what is the cost of SQL queries)...",
-			"description":"There are certain things that look easy on paper but can be black holes in development and usability. Here are a few of them."
+			"instructor_notes":"...",
+			"description":"There are certain things that look easy on paper but can be black holes in development and usability. We will talk about <ul><li>semi-persistance</li> <li>Apple like search results</li> <li>data rich dashboards</li> <li>decision algorithms</li></ul>"
 		},
 		{
 			"name":"Redesign This Course",

@@ -1,7 +1,7 @@
 {
 	"week":13,
 	"topic":"development",
-	"description":"The native medium of software designs is code.",
+	"description":"The native medium of software designs is code. In this class, Eric will walk us through what it takes to take one design through to production and we will think back on the class in general.",
 	"activities":[
 		{
 			"name":"CodeRyte: A Case Study in Software Design and Development",

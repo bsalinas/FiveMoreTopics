@@ -1,5 +1,5 @@
 # Course Structure for Jekyll
-This is an example course website which uses a series of json files to populate what happens in class each week.
+This is an example course website which uses a series of json files to populate what happens in class each week. Much of the content shown in the website is data-driven based on these json files, and so at first it can be challenging to follow what is happening.
 
 ## Installation
 
@@ -9,6 +9,18 @@ This is an example course website which uses a series of json files to populate 
 - Run the jekyll server: `jekyll serve --port 5001 --watch --baseurl`
 
 You should have a server up and running locally at <http://localhost:5001>.
+
+## HTML Pages
+### Primary HTML Pages
+At a high level, there are the following html pages
+* `index.html`: The index page. This pulls markdown files from the `_posts` directory which have a `category` of `news`. The intention of this page is to provide free-form messages to students. See [http://bsalinas.github.io/FiveMoreTopics/](http://bsalinas.github.io/FiveMoreTopics/)
+* `overview.html`: This page is designed to be the course syllabus. It included an overview of the course, the list of topics we were covering (in my case, the course was driven by 5 major topics of study), and the textbooks for the course. See [http://bsalinas.github.io/FiveMoreTopics/overview.html](http://bsalinas.github.io/FiveMoreTopics/overview.html) for my example. This pulls in `topics` from `_data\topics.json` as well as textbooks from `_data\textbooks.json`. Everything else is static html in `overview.html`.
+* `topics.html`: This showcases the topics we were covering in the course. It is driven by the `_data\topics.json` file.
+* `assignments.html`: This shows all of the past assignments so that students can always see what is due. It pulls from all of the `weekN.json` files and renders the assignments as discussed below.
+* `_layout\layout.html`: This is the layout used for every page in the site. It includes the left navigation as well as the css and javascript necessary.
+
+### Secondary HTML Pages
+Throughout the course, I amde a few other pages for various content. For example, there is the [student survey results](http://bsalinas.github.io/FiveMoreTopics/survey_results.html) and the [html/css intro examples](http://bsalinas.github.io/FiveMoreTopics/html_intro.html). One of the nice things about `jekyll` is that you can add any extra pages you want just by creating an html file.
 
 ## Data Directory
 ### classes.json

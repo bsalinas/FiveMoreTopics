@@ -1,60 +1,43 @@
-# Left
-
-Left is a clean, whitespace-happy layout for [Jekyll](https://github.com/mojombo/jekyll).
-
-This is designed to be an easy layout to modify for your own blog. It was
-extracted from [zachholman.com](http://zachholman.com/), which means it was
-battle-hardened from years of posting serious blog posts about emoji and swear
-words.
-
-You can see it live right here: <http://zachholman.com/left/>
-
-![Left](http://cl.ly/image/3S2r1p2C0E2B/content)
+# Course Structure for Jekyll
+This is an example course website which uses a series of json files to populate what happens in class each week.
 
 ## Installation
 
 - Install Jekyll: `gem install jekyll`
-- [Fork this repository](https://github.com/holman/left/fork)
+- [Fork this repository](https://github.com/bsalinas/FiveMoreTopics)
 - Clone it: `git clone https://github.com/YOUR-USER/left`
 - Run the jekyll server: `jekyll serve --port 5001 --watch --baseurl`
 
 You should have a server up and running locally at <http://localhost:5001>.
 
-## Customization
+## Data Directory
+### classes.json
+The classes.json file includes the names of each of the json files for the class each week. Right now it is just set to be `["week0", "week1", "week2",...]`
 
-Next you'll want to change a few things. Most of them can be changed directly in
-[_config.yml](https://github.com/holman/left/blob/master/_config.yml). That's
-where we'll pull your name, Twitter username, and things like that.
+### weekN.json
+Each week of the course has a `json` file that drives the content for that course. Here's a summary of some of the values:
+* `week`: the week number
+* `topic`: a key into the `_data\topics.json` object which was used to specify which topic a course was related to. This is used by the [left navigation](https://github.com/bsalinas/FiveMoreTopics/blob/gh-pages/_layouts/layout.html#L141) to indicate where we change topics (in a kind of hacky way) as well as on the title of each of the [class pages](https://github.com/bsalinas/FiveMoreTopics/blob/gh-pages/_layouts/post.html#L6).
+* `description`: The description at the top of each of the pages
+* `activities`: An array of the activities being covered during each individual class. See the section below on these.
+* `assignments`: An array of the assignments which are assigned this week. See the section below.
 
-There's a few other places that you'll want to change, too:
-
-- [CNAME](https://github.com/holman/left/blob/master/CNAME): If you're using
-  this on GitHub Pages with a custom domain name, you'll want to change this
-  to be the domain you're going to use. All that should be in here is a
-  domain name on the first line and nothing else (like: `example.com`).
-- [favicon.ico](https://github.com/holman/left/blob/master/favicon.ico): This
-  is a smaller version of my gravatar for use as the icon in your browser's
-  address bar. You should change it to whatever you'd like.
-- [apple-touch-icon.png](https://github.com/holman/left/blob/master/apple-touch-icon.png):
-  Again, this is my gravatar, and it shows up in iOS and various other apps
-  that use this file as an "icon" for your site.
-
-## Deployment
-
-Left is designed to be deployed to [GitHub Pages](http://pages.github.com). It
-uses [repository metadata](https://help.github.com/articles/repository-metadata-on-github-pages)
-to generate some of your content, like your GitHub URL and avatar information (so you
-might not actually see it locally until you push it up to Pages).
-
-All you should have to do is rename your repository on GitHub to be
-`username.github.com`. Since everything is on the `gh-pages` branch, you
-should be able to see your new site at <http://username.github.io>.
-
-## Licensing
-
-This is [MIT](https://github.com/holman/left/blob/master/LICENSE) with no
-added caveats, so feel free to use this on your site without linking back to
-me or using a disclaimer or anything silly like that.
-
-If you'd like give me credit somewhere on your blog or tweet a shout out to
-[@holman](https://twitter.com/holman), well hey, I'll take it.
+#### Activities Array
+The `activities` is rendered by the template at `_includes\activity.html. The idea is that each week, class time is divided into a series of `activities`.  Here's some info on the specific attributes.
+* `name`:The name of the activity.
+* `type`: This is not used for anything... I mainly included it so that I could later query against how many lectures versus group activities I had.
+* `time`: An approximate time (in minutes). It is shown as `~N minutes` next to the name of the activity.
+* `description`: The description of the activity. This can include text or html.
+* `attachments`: An array of `attachment` objects. I used these to include links to slides
+ * `link`: The absolute or relative path to the file. If the file begins with `http`, then it will be an absolute path. Otherwise, it will be linked relative to the root directory.
+ * `title`:The name of the attachment.
+ * `type`: Either `download` or `link`. This specifies whether the button says "Download {{title}}" or "View {{title}}". Initially, I was thinking there might be more kinds of attachments.
+ * `location`: `internal` or not present. Not sure if this is necessary, but I used it on week1.
+* `results`: An object which includes meta analysis of how the activity worked. These are toggled on or off by the checkboxes at the top of the site.
+ * `summary`: Text as a summary of the student results for the activity.
+ * `meta`: Used as notes to myself about the effectiveness of the activity. What would change in the future?
+ * `documents`: An optional array of `documents` that show results of what happened in the class. These are rendered in the [activity template](https://github.com/bsalinas/FiveMoreTopics/blob/gh-pages/_includes/activity.html#L16). Each document has:
+  * `type`: This isn't actually used. Again, the thinking was that in the future there might be other types of documents. 
+	* `location`:"internal" or not present. Indicates whether this is hosted on the same server or not.
+	* `caption`:Text that appears above the image.
+	* `link`: The link to the attachment.

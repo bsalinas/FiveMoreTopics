@@ -41,3 +41,33 @@ The `activities` is rendered by the template at `_includes\activity.html. The id
 	* `location`:"internal" or not present. Indicates whether this is hosted on the same server or not.
 	* `caption`:Text that appears above the image.
 	* `link`: The link to the attachment.
+
+Here's an example `Activity`
+```
+{
+	"name":"The Basics of Crafting Data Sets",
+	"type":"lecture",
+	"time":20,
+	"description":"You don't always have access to the data you want for a design. In this lecture, we'll cover some methods for crafting datasets that are realistic.",
+	"instructor_notes":"knowledge -> info -> data",
+	"attachments":[
+		{
+			"link":"week6/crafting_data_v01.pdf",
+			"title":"Slides",
+			"type":"download"
+		}
+	],
+	"results":{
+		"summary":"This talk outlined some practical steps to actually generating data that isn't readily available. After a group example, students worked on generating a sample schedule as a group.",
+		"documents":[
+			{
+				"type":"photo",
+				"location":"internal",
+				"caption":"These students told the story of a student who changed their major twice and studied away one semester.",
+				"link":"files/week6/sample_schedule_1.jpg"
+			}
+		],
+		"meta":"Providing the sample in lecture as well as letting students all work on the same example in their groups worked well for introducing concepts gradually."
+	}
+}
+```

@@ -71,3 +71,12 @@ Here's an example `Activity`
 	}
 }
 ```
+
+#### Assignment Array
+An `assignment` object is, as it sounds, an assignment for students to work on between one class and another. These are rendered using the [`_includes\assignment.html`](https://github.com/bsalinas/FiveMoreTopics/blob/gh-pages/_includes/assignment.html) template and aggregated on the [`assignments.html`](https://github.com/bsalinas/FiveMoreTopics/blob/gh-pages/assignments.html) as well as shown at [the bottom of each class page](https://github.com/bsalinas/FiveMoreTopics/blob/gh-pages/_layouts/post.html#L42).
+
+* `description`: This is the main field of an assignment. It includes all of the details for the assignment. It can include HTML (see [week4.json](https://github.com/bsalinas/FiveMoreTopics/blob/gh-pages/_data/week4.json#L123) as an example).
+* `required`: A boolean indicating if the assingment is required or not. If it is optional, the assignment gets different text treatment and an indication that is is optional.
+* `type`: A freeform field which I never did anything with. The goal was to be able to query the data later.
+
+
